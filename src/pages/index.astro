@@ -1,0 +1,365 @@
+---
+    import "../styles/global.css"; 
+    import {Calculator, FileText} from '@lucide/astro';
+    import HeroComponent from '../components/Hero.astro';
+    import Layout from '../layouts/Layout.astro';
+
+---
+
+
+<Layout>
+
+
+    <HeroComponent />
+
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Leistungsstarke Funktionen</h2>
+                <p class="text-xl text-gray-600">Alles was Sie für Ihre Beistandschaft benötigen</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <a class="group hover:shadow-xl transition-all duration-300 rounded-xl p-8 border border-gray-100" href="/features">
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                        <FileText class="text-2xl text-blue-600 group-hover:text-white"/>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Digitale Dokumentation</h3>
+                    <p class="text-gray-600 mb-4">Erfassen Sie alle Tätigkeiten digital und strukturiert. Mit Vorlagen für häufige Einträge.</p>
+                    <div class="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg flex items-center justify-center">
+                        <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot">
+                    </div>
+                </a>
+
+                <!-- Feature 2 -->
+                <div class="group hover:shadow-xl transition-all duration-300 rounded-xl p-8 border border-gray-100">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors">
+                        <i data-lucide="calculator" class="text-2xl text-green-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Automatische Abrechnung</h3>
+                    <p class="text-gray-600 mb-4">Erstellen Sie Abrechnungen per Knopfdruck. KESB-konforme Formate.</p>
+                    <div class="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg flex items-center justify-center">
+                        <i data-lucide="image" class="w-12 h-12 text-gray-300"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group hover:shadow-xl transition-all duration-300 rounded-xl p-8 border border-gray-100">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors">
+                        <i data-lucide="chart-no-axes-combined" class="text-2xl text-purple-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Berichte & Statistiken</h3>
+                    <p class="text-gray-600 mb-4">Generieren Sie detaillierte Berichte für KESB und Klienten mit einem Klick.</p>
+                    <div class="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg flex items-center justify-center">
+                                                <i data-lucide="image" class="w-12 h-12 text-gray-300"></i>
+
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="group hover:shadow-xl transition-all duration-300 rounded-xl p-8 border border-gray-100">
+                    <div class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-600 transition-colors">
+                        <i data-lucide="users" class="text-2xl text-orange-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Klientenverwaltung</h3>
+                    <p class="text-gray-600 mb-4">Verwalten Sie alle Klientendaten sicher und übersichtlich an einem Ort.</p>
+                    <div class="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg flex items-center justify-center">
+                         <img src="/images/screenshots/clients_ai.png" alt="Memos Screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="group hover:shadow-xl transition-all duration-300 rounded-xl p-8 border border-gray-100">
+                    <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
+                        <i data-lucide="calendar-check-2" class="text-2xl text-red-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Termin & Fristen</h3>
+                    <p class="text-gray-600 mb-4">Behalten Sie alle wichtigen Termine und Fristen im Überblick.</p>
+                    <div class="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg flex items-center justify-center">
+                        <i data-lucide="calendar-check-2" class="text-4xl text-gray-300"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="group hover:shadow-xl transition-all duration-300 rounded-xl p-8 border border-gray-100">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition-colors">
+                        <i data-lucide="lock" class="text-2xl text-indigo-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Datenschutz & Sicherheit</h3>
+                    <p class="text-gray-600 mb-4">Schweizer Server, DSGVO-konform, verschlüsselte Übertragung.</p>
+                    <div class="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg flex items-center justify-center">
+                        <i data-lucide="lock" class="text-4xl text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Vorteile Section -->
+    <section id="vorteile" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Ihre Vorteile</h2>
+                <p class="text-xl text-gray-600">Warum Sie Memova lieben werden</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                                <i data-lucide="check" class="text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Zeitersparnis von bis zu 50%</h3>
+                            <p class="text-gray-600">Automatisierte Prozesse und Vorlagen reduzieren Ihren administrativen Aufwand erheblich.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                               <i data-lucide="check" class="text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">100% KESB-konform</h3>
+                            <p class="text-gray-600">Entwickelt nach aktuellen KESB-Richtlinien und in Zusammenarbeit mit erfahrenen Beiständen.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                               <i data-lucide="check" class="text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Ortsunabhängig arbeiten</h3>
+                            <p class="text-gray-600">Greifen Sie von überall auf Ihre Daten zu - ob im Büro, beim Klienten oder von zu Hause.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                                <i data-lucide="check" class="text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Keine Installation notwendig</h3>
+                            <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <div class="aspect-video bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="chart-pie" class="text-6xl text-blue-300"></i>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-3xl font-bold text-blue-600">50%</div>
+                            <div class="text-sm text-gray-600">Zeitersparnis</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-green-600">100%</div>
+                            <div class="text-sm text-gray-600">KESB-konform</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-purple-600">24/7</div>
+                            <div class="text-sm text-gray-600">Verfügbar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="preise" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Transparente Preise</h2>
+                <p class="text-xl text-gray-600">Wählen Sie das passende Paket für Ihre Bedürfnisse</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-500 transition-all">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Basis</h3>
+                        <div class="text-5xl font-bold text-gray-900 mb-2">
+                            CHF 29
+                            <span class="text-lg font-normal text-gray-600">/Monat</span>
+                        </div>
+                        <p class="text-gray-600">Für einzelne Beistände</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Bis zu 10 Klienten</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Digitale Dokumentation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Basis-Berichte</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>E-Mail Support</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-colors">
+                        Jetzt starten
+                    </button>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="border-2 border-blue-500 rounded-2xl p-8 relative transform scale-105 shadow-xl bg-blue-50">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold">BELIEBT</span>
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Professional</h3>
+                        <div class="text-5xl font-bold text-gray-900 mb-2">
+                            CHF 59
+                            <span class="text-lg font-normal text-gray-600">/Monat</span>
+                        </div>
+                        <p class="text-gray-600">Für aktive Beistände</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Bis zu 50 Klienten</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Alle Basis-Features</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Automatische Abrechnung</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Erweiterte Berichte</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Prioritäts-Support</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors">
+                        Jetzt starten
+                    </button>
+                </div>
+
+                <!-- Team Plan -->
+                <div class="border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-500 transition-all">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Team</h3>
+                        <div class="text-5xl font-bold text-gray-900 mb-2">
+                            CHF 149
+                            <span class="text-lg font-normal text-gray-600">/Monat</span>
+                        </div>
+                        <p class="text-gray-600">Für Organisationen</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Unbegrenzte Klienten</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Alle Pro-Features</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Multi-User Zugang</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>API-Zugang</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="text-green-500 mr-3"></i>
+                            <span>Persönlicher Support</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-colors">
+                        Kontaktieren
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">
+                Bereit, Ihre Arbeit zu vereinfachen?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Starten Sie noch heute mit 30 Tagen kostenloser Testphase
+            </p>
+            <button class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                Kostenlos testen - keine Kreditkarte erforderlich
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Kontaktieren Sie uns</h2>
+                    <p class="text-xl text-gray-600">Wir helfen Ihnen gerne weiter</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Vorname</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Nachname</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">E-Mail</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Organisation</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nachricht</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-full font-semibold hover:bg-blue-700 transition-colors">
+                            Nachricht senden
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</Layout>
