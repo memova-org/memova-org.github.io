@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { Calculator, FileText, Check, Binoculars, CableCar, Timer } from "@lucide/astro";
+import { Check, Binoculars, CableCar, Timer, Users, Tag, FileScan, Binary, Megaphone, Package2 } from "@lucide/astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -10,7 +10,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Digitale Dokumentation</h2>
-        <p class="text-xl text-gray-600">Dokumentieren sie Ihre Arbeit in Memos</p>
+        <p class="text-xl text-gray-600">Erfassen Sie ihre tägliche Arbeit in Memos</p>
       </div>
 
       <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
@@ -22,9 +22,8 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Überblick auch bei komplexen Mandate</h3>
-              <p class="text-gray-600">Erstellen Sie in Sekundenschnelle neue Memos und Dokumentieren sie so chronologisch den Verlauf des Mandates</p
-              >
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Überblick auch bei komplexen Mandaten</h3>
+              <p class="text-gray-600">Erfassen und Nachvervolgen von Akteneinträgen (Memos) zur chronologischen Übersicht über Ihr Mandat</p>
             </div>
           </div>
 
@@ -36,7 +35,8 @@ import Layout from "../layouts/Layout.astro";
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Volltextsuche und Filter</h3>
-              <p class="text-gray-600">Suchen sie nach Stichworten oder Filtern Sie ihre Memos um schnell an alle wichtigen Informationen zu kommen</p
+              <p class="text-gray-600"
+                >Leistungsstarke Such- und Filteroptionen ermöglichen Ihnen schnell und Präszise an die relevanten Informationen zu kommen</p
               >
             </div>
           </div>
@@ -75,10 +75,9 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Erfassen des Aufwands mit nur einem Klick</h3>
               <p class="text-gray-600"
-                >Jedes Memo enstspricht geleisteter Arbeit und kann ohne weiteren Schritt in der Abrechung verwendet werden. Alternativ stehen
-                individualisierte Shortcuts für repetitive Aufwände wie bswp. Verarbeiten von Briefpost. So wird Ihre Arbeit mit nur einem Klick
-                korrekt in der Abrechung wiedergespiegelt!
-              </p>
+                >Ihre geleistete Arbeit können Sie direkt im Klientendashboard abrechnen. Für wiederkehrende Tätigkeiten können Sie Shortcuts
+                erstellen um diese mit nur einem Klick zu erfassen. So sparen Sie Zeit und können sich auf das Wesentliche konzentrieren.</p
+              >
             </div>
           </div>
         </div>
@@ -91,7 +90,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Dokumentenmanagement</h2>
-        <p class="text-xl text-gray-600">Komplete digitales Dokumentenmanegement inklusive</p>
+        <p class="text-xl text-gray-600">Ein leistungstarkes integriertes Dokumenten-Management-System immer zur Hand</p>
       </div>
 
       <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
@@ -99,11 +98,11 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
+                <Users class="text-lg text-white" />
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Klientenbasiertes Ablagesystem</h3>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Klient*innenbasiertes Ablagesystem</h3>
               <p class="text-gray-600"
                 >Die Dokumente der Klient*in werden übersichtlich auf dem Klientendashboard dargestellt und stehen jederzeit mit nur einem Klick zur
                 Verfügung</p
@@ -114,14 +113,14 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
+                <Tag class="text-lg text-white" />
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Flexibles Tagging</h3>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Flexible Verschlagwortung</h3>
               <p class="text-gray-600">
-                Dokumente können mit Tags versehen werden um sie so einfach zu kategorisieren und wiederzufinden. Erstellen Sie Ihre eigenen Tags um
-                Ihre Dokumente individuell zu organisieren.
+                Dokumente können mit Tags (Schlagworten) versehen werden um sie so einfach zu kategorisieren und wiederzufinden. Erstellen Sie Ihre
+                eigenen Tags um Ihre Dokumente individuell zu organisieren.
               </p>
             </div>
           </div>
@@ -129,14 +128,14 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
+                <Binoculars class="text-lg text-white" />
               </div>
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Volltextsuche und Filteroptionen</h3>
               <p class="text-gray-600"
                 >Alle Dokumente werden automatisch mittels Volltextsuche durchsuchbar gemacht. Zudem stehen verschiedene Filteroptionen zur Verfügung
-                sodass sie auch nach Jahren das richtige Dokument in kürze Finden</p
+                sodass Sie auch nach Jahren jedes Dokument schnell finden</p
               >
             </div>
           </div>
@@ -153,26 +152,26 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
+                <FileScan class="text-lg text-white" />
               </div>
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Scannen in die APP</h3>
-              <p class="text-gray-600">Vom eigenen Scanner werden Briefe direkt per Knopfdruck in die Memova-APP gescannt</p>
+              <p class="text-gray-600">Direktes Scannen und verschlüsselte Übertragung von Dokumenten vom lokalen Scanner in die Memova App</p>
             </div>
           </div>
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
+                <Binary class="text-lg text-white" />
               </div>
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">KI Gestützte Dokumentenanalyse</h3>
               <p class="text-gray-600"
-                >Jedes Dokument wird in ein durchsuchbares PDF umgewandelt und anschliessend mittels KI analysiert um so automatisch Tags und Klienten
-                zuzuordnen
+                >Jedes Dokument wird automatisch digitalisiert, KI gestützt analysiert und anschliessend mit den passenden Schlagworten versehen den
+                jeweiligen Klient*innen zugeordnet.
               </p>
             </div>
           </div>
@@ -180,13 +179,13 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
+                <Megaphone class="text-lg text-white" />
               </div>
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Inbox für neue Dokumente</h3>
               <p class="text-gray-600"
-                >Neue, unbearbeitete Dokumente erscheinen speziel gekennzeichnet in der Inbox. So geht keine wichtige Rechnung mehr unter!</p
+                >Neue Dokumente erscheinen nach der Verarbeitung im digitalen Posteingang der Memova APP und gehen so nie unter</p
               >
             </div>
           </div>
@@ -194,7 +193,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
+                <Package2 class="text-lg text-white" />
               </div>
             </div>
             <div>

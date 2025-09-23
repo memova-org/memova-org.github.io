@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { NotebookPen, Files, Check } from "@lucide/astro";
+import { NotebookPen, Files, Check, Users } from "@lucide/astro";
 import HeroComponent from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -13,17 +13,29 @@ import Layout from "../layouts/Layout.astro";
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Leistungsstarke Funktionen</h2>
-        <p class="text-xl text-gray-600">Alles was Sie für Ihre Beistandschaft benötigen</p>
+        <p class="text-xl text-gray-600">Die tägliche Arbeit abgebildet in umfangreichen Modulen</p>
       </div>
 
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Feature Klient*innen Verwaltung 4 -->
+        <div class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl">
+          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-orange-100 transition-colors group-hover:bg-orange-600">
+            <Users class="text-2xl text-orange-600 group-hover:text-white" />
+          </div>
+          <h3 class="mb-3 text-xl font-bold text-gray-900">Klient*innenverwaltung</h3>
+          <p class="mb-4 text-gray-600">Strukturierte Übersicht über alle Stammdaten und relevanten Beziehungen von Klient*innen</p>
+          <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
+            <img src="/images/illustrations/clients_general.png" alt="Memos Screenshot" />
+          </div>
+        </div>
+
         <!-- Feature Digitale Dokumentation-->
         <a class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl" href="/features">
           <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-blue-100 transition-colors group-hover:bg-blue-600">
             <NotebookPen class="text-2xl text-blue-600 group-hover:text-white" />
           </div>
-          <h3 class="mb-3 text-xl font-bold text-gray-900">Digitale Dokumentation</h3>
-          <p class="mb-4 text-gray-600">Erfassen Sie alle Tätigkeiten digital und strukturiert. Mit Vorlagen für häufige Einträge.</p>
+          <h3 class="mb-3 text-xl font-bold text-gray-900">Digitale Fallführung</h3>
+          <p class="mb-4 text-gray-600">Erfassen Sie alle Tätigkeiten strukturiert und vollständig Digital</p>
           <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
             <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" />
           </div>
@@ -34,8 +46,8 @@ import Layout from "../layouts/Layout.astro";
           <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-red-100 transition-colors group-hover:bg-red-600">
             <Files class="text-2xl text-red-600 group-hover:text-white" />
           </div>
-          <h3 class="mb-3 text-xl font-bold text-gray-900">Dokumentenmanagement</h3>
-          <p class="mb-4 text-gray-600">Alle Dokumente geordnet an einem Ort. Immer, überall!</p>
+          <h3 class="mb-3 text-xl font-bold text-gray-900">Dokumenten-Management-System (DMS)</h3>
+          <p class="mb-4 text-gray-600">Leistungsstarkes Modul zur Kient*innen basierten Organisation von Dokumenten</p>
           <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
             <img src="/images/illustrations/documents_general.png" alt="Documents Illustration" />
           </div>
@@ -62,18 +74,6 @@ import Layout from "../layouts/Layout.astro";
           <p class="mb-4 text-gray-600">Generieren Sie detaillierte Berichte für KESB und Klienten mit einem Klick.</p>
           <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
             <i data-lucide="image" class="h-12 w-12 text-gray-300"></i>
-          </div>
-        </div>
-
-        <!-- Feature 4 -->
-        <div class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl">
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-orange-100 transition-colors group-hover:bg-orange-600">
-            <i data-lucide="users" class="text-2xl text-orange-600 group-hover:text-white"></i>
-          </div>
-          <h3 class="mb-3 text-xl font-bold text-gray-900">Klientenverwaltung</h3>
-          <p class="mb-4 text-gray-600">Verwalten Sie alle Klientendaten sicher und übersichtlich an einem Ort.</p>
-          <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
-            <img src="/images/screenshots/clients_ai.png" alt="Memos Screenshot" />
           </div>
         </div>
 
