@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { FileText } from "@lucide/astro";
+import { NotebookPen, Files, Check } from "@lucide/astro";
 import HeroComponent from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -17,15 +17,27 @@ import Layout from "../layouts/Layout.astro";
       </div>
 
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Feature 1 -->
+        <!-- Feature Digitale Dokumentation-->
         <a class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl" href="/features">
           <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-blue-100 transition-colors group-hover:bg-blue-600">
-            <FileText class="text-2xl text-blue-600 group-hover:text-white" />
+            <NotebookPen class="text-2xl text-blue-600 group-hover:text-white" />
           </div>
           <h3 class="mb-3 text-xl font-bold text-gray-900">Digitale Dokumentation</h3>
           <p class="mb-4 text-gray-600">Erfassen Sie alle Tätigkeiten digital und strukturiert. Mit Vorlagen für häufige Einträge.</p>
           <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
             <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" />
+          </div>
+        </a>
+
+        <!-- Feature Documents Management -->
+        <a href="/features#feature_documents" class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl">
+          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-red-100 transition-colors group-hover:bg-red-600">
+            <Files class="text-2xl text-red-600 group-hover:text-white" />
+          </div>
+          <h3 class="mb-3 text-xl font-bold text-gray-900">Dokumentenmanagement</h3>
+          <p class="mb-4 text-gray-600">Alle Dokumente geordnet an einem Ort. Immer, überall!</p>
+          <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
+            <img src="/images/illustrations/documents_general.png" alt="Documents Illustration" />
           </div>
         </a>
 
@@ -65,18 +77,6 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
 
-        <!-- Feature 5 -->
-        <div class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl">
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-red-100 transition-colors group-hover:bg-red-600">
-            <i data-lucide="calendar-check-2" class="text-2xl text-red-600 group-hover:text-white"></i>
-          </div>
-          <h3 class="mb-3 text-xl font-bold text-gray-900">Termin & Fristen</h3>
-          <p class="mb-4 text-gray-600">Behalten Sie alle wichtigen Termine und Fristen im Überblick.</p>
-          <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
-            <i data-lucide="calendar-check-2" class="text-4xl text-gray-300"></i>
-          </div>
-        </div>
-
         <!-- Feature 6 -->
         <div class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl">
           <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-indigo-100 transition-colors group-hover:bg-indigo-600">
@@ -105,31 +105,34 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <i data-lucide="check" class="text-lg text-white"></i>
+                <Check class="text-lg text-white" />
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Zeitersparnis von bis zu 50%</h3>
-              <p class="text-gray-600">Automatisierte Prozesse und Vorlagen reduzieren Ihren administrativen Aufwand erheblich.</p>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Mehr Zeit für Ihre Klient:innen</h3>
+              <p class="text-gray-600"
+                >Durch die vereinfachung und automatisierung von repetitiven administrativen Arbeiten bleibt ihnen erheblich mehr Zeit für Ihre
+                Kernaufgaben</p
+              >
             </div>
           </div>
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <i data-lucide="check" class="text-lg text-white"></i>
+                <Check class="text-lg text-white" />
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">100% KESB-konform</h3>
-              <p class="text-gray-600">Entwickelt nach aktuellen KESB-Richtlinien und in Zusammenarbeit mit erfahrenen Beiständen.</p>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Massgeschneidert für Beiständ*innen</h3>
+              <p class="text-gray-600">Entwickelt aus dem Berufsaltag deckt Memova alle relevanten Aspekte im täglichen Arbeitsalltag ab</p>
             </div>
           </div>
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <i data-lucide="check" class="text-lg text-white"></i>
+                <Check class="text-lg text-white" />
               </div>
             </div>
             <div>
@@ -141,28 +144,29 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <i data-lucide="check" class="text-lg text-white"></i>
+                <Check class="text-lg text-white" />
               </div>
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Keine Installation notwendig</h3>
-              <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
+              <p class="text-gray-600"
+                >Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser und reduziert Ihre IT-Kosten.</p
+              >
             </div>
           </div>
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <div class="mb-6 flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50">
-            <i data-lucide="chart-pie" class="text-6xl text-blue-300"></i>
-          </div>
+          <img src="/images/photos/happy_memova.png" alt="Happy Memova User" class="mb-6 rounded-xl" />
+
           <div class="grid grid-cols-3 gap-4 text-center">
             <div>
-              <div class="text-3xl font-bold text-blue-600">50%</div>
-              <div class="text-sm text-gray-600">Zeitersparnis</div>
+              <div class="text-3xl font-bold text-blue-600">Mehr</div>
+              <div class="text-sm text-gray-600">Zeit für Ihre Klient*innen</div>
             </div>
             <div>
               <div class="text-3xl font-bold text-green-600">100%</div>
-              <div class="text-sm text-gray-600">KESB-konform</div>
+              <div class="text-sm text-gray-600">Digital</div>
             </div>
             <div>
               <div class="text-3xl font-bold text-purple-600">24/7</div>

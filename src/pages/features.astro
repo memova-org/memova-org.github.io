@@ -1,12 +1,12 @@
 ---
 import "../styles/global.css";
-import { Calculator, FileText, Check, Binoculars, CableCar } from "@lucide/astro";
+import { Calculator, FileText, Check, Binoculars, CableCar, Timer } from "@lucide/astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
   <!-- Feature Documentation Section -->
-  <section id="feature_documentation" class="bg-gray-50 py-40 ">
+  <section id="feature_documentation" class="bg-gray-50 py-40">
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Digitale Dokumentation</h2>
@@ -48,9 +48,9 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Auch für unterweges</h3>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Auch für unterwegs</h3>
               <p class="text-gray-600"
-                >Als Mobile-Fähige WebAPP können Sie ihre Memos auch von Unterwegs mit ihrem Smartphone diktieren. Zurück im Büro ist so auch schon
+                >Als Mobile-Fähige WebAPP können Sie ihre Memos auch von unterwegs mit ihrem Smartphone diktieren. Zurück im Büro ist so auch schon
                 abgerechnet!</p
               >
             </div>
@@ -69,7 +69,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
+                <Timer class="text-lg text-white" />
               </div>
             </div>
             <div>
@@ -81,37 +81,13 @@ import Layout from "../layouts/Layout.astro";
               </p>
             </div>
           </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Ortsunabhängig arbeiten</h3>
-              <p class="text-gray-600">Greifen Sie von überall auf Ihre Daten zu - ob im Büro, beim Klienten oder von zu Hause.</p>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Keine Installation notwendig</h3>
-              <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Feature Document Mangement Section -->
-  <section id="feature_documentation" class="bg-white py-20">
+  <section id="feature_documents" class="bg-white py-20">
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Dokumentenmanagement</h2>
@@ -127,8 +103,10 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Überblick auch bei komplexen Mandate</h3>
-              <p class="text-gray-600">Erstellen Sie in Sekundenschnelle neue Memos und Dokumentieren sie so chronologisch den Verlauf des Mandates</p
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Klientenbasiertes Ablagesystem</h3>
+              <p class="text-gray-600"
+                >Die Dokumente der Klient*in werden übersichtlich auf dem Klientendashboard dargestellt und stehen jederzeit mit nur einem Klick zur
+                Verfügung</p
               >
             </div>
           </div>
@@ -140,11 +118,10 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Erfassen des Aufwands mit nur einem Klick</h3>
-              <p class="text-gray-600"
-                >Jedes Memo enstspricht geleisteter Arbeit und kann ohne weiteren Schritt in der Abrechung verwendet werden. Alternativ stehen
-                individualisierte Shortcuts für repetitive Aufwände wie bswp. Verarbeiten von Briefpost. So wird Ihre Arbeit mit nur einem Klick
-                korrekt in der Abrechung wiedergespiegelt!
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Flexibles Tagging</h3>
+              <p class="text-gray-600">
+                Dokumente können mit Tags versehen werden um sie so einfach zu kategorisieren und wiederzufinden. Erstellen Sie Ihre eigenen Tags um
+                Ihre Dokumente individuell zu organisieren.
               </p>
             </div>
           </div>
@@ -156,30 +133,21 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Ortsunabhängig arbeiten</h3>
-              <p class="text-gray-600">Greifen Sie von überall auf Ihre Daten zu - ob im Büro, beim Klienten oder von zu Hause.</p>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Check class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Keine Installation notwendig</h3>
-              <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Volltextsuche und Filteroptionen</h3>
+              <p class="text-gray-600"
+                >Alle Dokumente werden automatisch mittels Volltextsuche durchsuchbar gemacht. Zudem stehen verschiedene Filteroptionen zur Verfügung
+                sodass sie auch nach Jahren das richtige Dokument in kürze Finden</p
+              >
             </div>
           </div>
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+          <img src="/images/screenshots/documents_view.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+          <img src="/images/illustrations/scan_workflow.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
         </div>
         <div class="space-y-6">
           <div class="flex gap-4">
@@ -189,9 +157,8 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Überblick auch bei komplexen Mandate</h3>
-              <p class="text-gray-600">Erstellen Sie in Sekundenschnelle neue Memos und Dokumentieren sie so chronologisch den Verlauf des Mandates</p
-              >
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Scannen in die APP</h3>
+              <p class="text-gray-600">Vom eigenen Scanner werden Briefe direkt per Knopfdruck in die Memova-APP gescannt</p>
             </div>
           </div>
 
@@ -202,11 +169,10 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Erfassen des Aufwands mit nur einem Klick</h3>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">KI Gestützte Dokumentenanalyse</h3>
               <p class="text-gray-600"
-                >Jedes Memo enstspricht geleisteter Arbeit und kann ohne weiteren Schritt in der Abrechung verwendet werden. Alternativ stehen
-                individualisierte Shortcuts für repetitive Aufwände wie bswp. Verarbeiten von Briefpost. So wird Ihre Arbeit mit nur einem Klick
-                korrekt in der Abrechung wiedergespiegelt!
+                >Jedes Dokument wird in ein durchsuchbares PDF umgewandelt und anschliessend mittels KI analysiert um so automatisch Tags und Klienten
+                zuzuordnen
               </p>
             </div>
           </div>
@@ -218,8 +184,10 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Ortsunabhängig arbeiten</h3>
-              <p class="text-gray-600">Greifen Sie von überall auf Ihre Daten zu - ob im Büro, beim Klienten oder von zu Hause.</p>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Inbox für neue Dokumente</h3>
+              <p class="text-gray-600"
+                >Neue, unbearbeitete Dokumente erscheinen speziel gekennzeichnet in der Inbox. So geht keine wichtige Rechnung mehr unter!</p
+              >
             </div>
           </div>
 
@@ -230,120 +198,14 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Keine Installation notwendig</h3>
-              <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Papier-Archiv im Minimum</h3>
+              <p class="text-gray-600"
+                >Mittels eingebauter Barcode-Funktion kann jeder Brief vor dem Scannen gekennzeichnet werden. So kann ein Dokument aus der Memova-APP
+                jederzeit ihrem originalen Papierdokument zugeordnet werden. Dies erspart lästiges Führen von Mandatsordnern. Eine Kiste mit mit allen
+                Dokumenten reicht!</p
+              >
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="features-alt" class="py-20">
-    <div class="container mx-auto">
-      <!-- Feature 1: Image left, text right -->
-      <div class="group transtion-all mb-16 flex w-full flex-col items-center rounded-lg py-10 duration-300 hover:shadow-xl md:flex-row md:px-10">
-        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
-          <img src="/images/screenshots/memos_read.png" alt="Digitale Dokumentation" class="w-full rounded-xl object-cover shadow-lg" />
-        </div>
-        <div class="w-full px-6 md:w-1/2">
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-blue-100 transition-colors group-hover:bg-blue-600">
-            <FileText class="text-2xl text-blue-600 group-hover:text-white" />
-          </div>
-          <h3 class="mb-4 text-3xl font-bold text-gray-900">Digitale Dokumentation</h3>
-          <p class="mb-2 text-lg text-gray-600"
-            >Dokumentieren sie alle Tätigkeiten und Aufwände in Memos. So behalten Sie immer den Überblick und erfassen gleichzeitig den Zeitaufwand
-            für spätere Abrechnungen. Alle Memos sind durchsuch- und filterbar sodass auch komplexe Mandate kein Problem werden.</p
-          >
-        </div>
-      </div>
-
-      <!-- Feature 2: Image right, text left -->
-      <div class="group transtion-all mb-16 flex w-full flex-col items-center rounded-lg p-10 duration-300 hover:shadow-xl md:flex-row">
-        <div class="w-full px-6 md:w-1/2">
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-blue-100 transition-colors group-hover:bg-blue-600">
-            <FileText class="text-2xl text-blue-600 group-hover:text-white" />
-          </div>
-          <h3 class="mb-4 text-3xl font-bold text-gray-900">Integriertes Dokumentenmanagement</h3>
-          <p class="mb-2 text-lg text-gray-600"
-            >Direktes Scannen nach Memova und Automatisiertes KI-Gestürztes Analysieren und zuordnen der Dokumente. Somit ersetzen Sie vollständig
-            Ihren Papierordner und haben alle Unterlagen jederzeit und Ortsunabhängig zur Verfügung. Volltextsuche und ein ausgeklügeltes Tag-System
-            halten auch bei grossen Papierbergen die Ordnung</p
-          >
-        </div>
-        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
-          <img src="/images/screenshots/memos_read.png" alt="Digitale Dokumentation" class="w-full rounded-xl object-cover shadow-lg" />
-        </div>
-      </div>
-
-      <!-- Feature 2: Text left, image right -->
-      <div class="mb-16 flex w-full flex-col items-center md:flex-row-reverse">
-        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
-          <div
-            class="flex aspect-video h-48 w-full max-w-md items-center justify-center rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg"
-          >
-            <Calculator class="text-6xl text-green-600" />
-          </div>
-        </div>
-        <div class="w-full px-6 md:w-1/2">
-          <h3 class="mb-4 text-3xl font-bold text-gray-900">Automatische Abrechnung</h3>
-          <p class="mb-2 text-lg text-gray-600">Erstellen Sie Abrechnungen per Knopfdruck. KESB-konforme Formate.</p>
-        </div>
-      </div>
-
-      <!-- Feature 3: Image left, text right -->
-      <div class="mb-16 flex w-full flex-col items-center md:flex-row">
-        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
-          <div
-            class="flex aspect-video h-48 w-full max-w-md items-center justify-center rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg"
-          >
-            <i data-lucide="chart-no-axes-combined" class="text-6xl text-purple-600"></i>
-          </div>
-        </div>
-        <div class="w-full px-6 md:w-1/2">
-          <h3 class="mb-4 text-3xl font-bold text-gray-900">Berichte & Statistiken</h3>
-          <p class="mb-2 text-lg text-gray-600">Generieren Sie detaillierte Berichte für KESB und Klienten mit einem Klick.</p>
-        </div>
-      </div>
-
-      <!-- Feature 4: Text left, image right -->
-      <div class="mb-16 flex w-full flex-col items-center md:flex-row-reverse">
-        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
-          <img src="images/screenshots/clients_ai.png" alt="Klientenverwaltung" class="w-full max-w-md rounded-xl shadow-lg" />
-        </div>
-        <div class="w-full px-6 md:w-1/2">
-          <h3 class="mb-4 text-3xl font-bold text-gray-900">Klientenverwaltung</h3>
-          <p class="mb-2 text-lg text-gray-600">Verwalten Sie alle Klientendaten sicher und übersichtlich an einem Ort.</p>
-        </div>
-      </div>
-
-      <!-- Feature 5: Image left, text right -->
-      <div class="mb-16 flex w-full flex-col items-center md:flex-row">
-        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
-          <div
-            class="flex aspect-video h-48 w-full max-w-md items-center justify-center rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg"
-          >
-            <i data-lucide="calendar-check-2" class="text-6xl text-red-600"></i>
-          </div>
-        </div>
-        <div class="w-full px-6 md:w-1/2">
-          <h3 class="mb-4 text-3xl font-bold text-gray-900">Termin & Fristen</h3>
-          <p class="mb-2 text-lg text-gray-600">Behalten Sie alle wichtigen Termine und Fristen im Überblick.</p>
-        </div>
-      </div>
-
-      <!-- Feature 6: Text left, image right -->
-      <div class="mb-16 flex w-full flex-col items-center md:flex-row-reverse">
-        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
-          <div
-            class="flex aspect-video h-48 w-full max-w-md items-center justify-center rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg"
-          >
-            <i data-lucide="lock" class="text-6xl text-indigo-600"></i>
-          </div>
-        </div>
-        <div class="w-full px-6 md:w-1/2">
-          <h3 class="mb-4 text-3xl font-bold text-gray-900">Datenschutz & Sicherheit</h3>
-          <p class="mb-2 text-lg text-gray-600">Schweizer Server, DSGVO-konform, verschlüsselte Übertragung.</p>
         </div>
       </div>
     </div>
