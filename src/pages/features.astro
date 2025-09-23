@@ -1,416 +1,406 @@
 ---
-    import "../styles/global.css"; 
-    import {Calculator, FileText, Check, Binoculars, CableCar} from '@lucide/astro';
-    import Layout from '../layouts/Layout.astro';
-
-
+import "../styles/global.css";
+import { Calculator, FileText, Check, Binoculars, CableCar } from "@lucide/astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-
 <Layout>
+  <!-- Feature Documentation Section -->
+  <section id="feature_documentation" class="bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+      <div class="mb-16 text-center">
+        <h2 class="mb-4 text-4xl font-bold text-gray-900">Digitale Dokumentation</h2>
+        <p class="text-xl text-gray-600">Dokumentieren sie Ihre Arbeit in Memos</p>
+      </div>
 
-    <!-- Feature Documentation Section -->
-    <section id="feature_documentation" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Digitale Dokumentation</h2>
-                <p class="text-xl text-gray-600">Dokumentieren sie Ihre Arbeit in Memos</p>
+      <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
             </div>
-
-            <div class="grid lg:grid-cols-2 gap-12 gap-y-24 items-center">
-                <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Überblick auch bei komplexen Mandate</h3>
-                            <p class="text-gray-600">Erstellen Sie in Sekundenschnelle neue Memos und Dokumentieren sie so chronologisch den Verlauf des Mandates</p>
-                        </div>
-                    </div>
-
-       
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Binoculars class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Volltextsuche und Filter</h3>
-                            <p class="text-gray-600">Suchen sie nach Stichworten oder Filtern Sie ihre Memos um schnell an alle wichtigen Informationen zu kommen</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <CableCar class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Auch für unterweges</h3>
-                            <p class="text-gray-600">Als Mobile-Fähige WebAPP können Sie ihre Memos auch von Unterwegs mit ihrem Smartphone diktieren. Zurück im Büro ist so auch schon abgerechnet!</p>
-                        </div>
-                    </div>
-                </div>
-
-          
-                <div class="bg-white rounded-2xl shadow-xl p-8">
-                    <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" class="rounded-lg mb-6">
-                </div>
-
-      <!-- Shortcuts-->
-                <div class="bg-white rounded-2xl shadow-xl p-8">
-                    <img src="/images/screenshots/shortcuts.png" alt="Memos Screenshot" class="rounded-lg mb-6">
-                </div>
-                 <div class="space-y-6">
-                        <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Erfassen des Aufwands mit nur einem Klick</h3>
-                            <p class="text-gray-600">Jedes Memo enstspricht geleisteter Arbeit und kann ohne weiteren Schritt in der Abrechung verwendet werden. Alternativ stehen individualisierte Shortcuts für repetitive Aufwände wie bswp. Verarbeiten von Briefpost. So wird Ihre Arbeit mit nur einem Klick korrekt in der Abrechung wiedergespiegelt! </p>
-                        </div>
-                    </div>
-
-       
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Ortsunabhängig arbeiten</h3>
-                            <p class="text-gray-600">Greifen Sie von überall auf Ihre Daten zu - ob im Büro, beim Klienten oder von zu Hause.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Keine Installation notwendig</h3>
-                            <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
-                        </div>
-                    </div>
-                </div>
-
-                
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Überblick auch bei komplexen Mandate</h3>
+              <p class="text-gray-600">Erstellen Sie in Sekundenschnelle neue Memos und Dokumentieren sie so chronologisch den Verlauf des Mandates</p
+              >
             </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Binoculars class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Volltextsuche und Filter</h3>
+              <p class="text-gray-600">Suchen sie nach Stichworten oder Filtern Sie ihre Memos um schnell an alle wichtigen Informationen zu kommen</p
+              >
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <CableCar class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Auch für unterweges</h3>
+              <p class="text-gray-600"
+                >Als Mobile-Fähige WebAPP können Sie ihre Memos auch von Unterwegs mit ihrem Smartphone diktieren. Zurück im Büro ist so auch schon
+                abgerechnet!</p
+              >
+            </div>
+          </div>
         </div>
-    </section>
 
-
-
-    <!-- Feature Document Mangement Section -->
-    <section id="feature_documentation" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Dokumentenmanagement</h2>
-                <p class="text-xl text-gray-600">Komplete digitales Dokumentenmanegement inklusive</p>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-12 gap-y-24 items-center">
-                <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Überblick auch bei komplexen Mandate</h3>
-                            <p class="text-gray-600">Erstellen Sie in Sekundenschnelle neue Memos und Dokumentieren sie so chronologisch den Verlauf des Mandates</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Erfassen des Aufwands mit nur einem Klick</h3>
-                            <p class="text-gray-600">Jedes Memo enstspricht geleisteter Arbeit und kann ohne weiteren Schritt in der Abrechung verwendet werden. Alternativ stehen individualisierte Shortcuts für repetitive Aufwände wie bswp. Verarbeiten von Briefpost. So wird Ihre Arbeit mit nur einem Klick korrekt in der Abrechung wiedergespiegelt! </p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Ortsunabhängig arbeiten</h3>
-                            <p class="text-gray-600">Greifen Sie von überall auf Ihre Daten zu - ob im Büro, beim Klienten oder von zu Hause.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Keine Installation notwendig</h3>
-                            <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl shadow-xl p-8">
-                    <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" class="rounded-lg mb-6">
-                </div>
-
-
-                <div class="bg-white rounded-2xl shadow-xl p-8">
-                    <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" class="rounded-lg mb-6">
-                </div>
-                 <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Überblick auch bei komplexen Mandate</h3>
-                            <p class="text-gray-600">Erstellen Sie in Sekundenschnelle neue Memos und Dokumentieren sie so chronologisch den Verlauf des Mandates</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Erfassen des Aufwands mit nur einem Klick</h3>
-                            <p class="text-gray-600">Jedes Memo enstspricht geleisteter Arbeit und kann ohne weiteren Schritt in der Abrechung verwendet werden. Alternativ stehen individualisierte Shortcuts für repetitive Aufwände wie bswp. Verarbeiten von Briefpost. So wird Ihre Arbeit mit nur einem Klick korrekt in der Abrechung wiedergespiegelt! </p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Ortsunabhängig arbeiten</h3>
-                            <p class="text-gray-600">Greifen Sie von überall auf Ihre Daten zu - ob im Büro, beim Klienten oder von zu Hause.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                                <Check class="text-white text-lg"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Keine Installation notwendig</h3>
-                            <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-            </div>
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
         </div>
-    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section id="features-alt" class="py-20">
-        <div class="container mx-auto">
-            <!-- Feature 1: Image left, text right -->
-            <div class="group hover:shadow-xl transtion-all duration-300 rounded-lg flex flex-col md:flex-row items-center w-full md:px-10 py-10 mb-16">
-                <div class="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
-                    <img src="/images/screenshots/memos_read.png" alt="Digitale Dokumentation" class="rounded-xl shadow-lg w-full object-cover">
-                </div>
-                <div class="md:w-1/2 w-full px-6">
-                     <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
-                        <FileText class="text-2xl text-blue-600 group-hover:text-white"/>
-                    </div>
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Digitale Dokumentation</h3>
-                    <p class="text-lg text-gray-600 mb-2">Dokumentieren sie alle Tätigkeiten und Aufwände in Memos. So behalten Sie immer den Überblick und erfassen gleichzeitig den Zeitaufwand für spätere Abrechnungen. Alle Memos sind durchsuch- und filterbar sodass auch komplexe Mandate kein Problem werden.</p>
-                </div>
-            </div>
-
-            <!-- Feature 2: Image right, text left -->
-            <div class="group hover:shadow-xl transtion-all duration-300 rounded-lg flex flex-col md:flex-row items-center w-full p-10 mb-16">
-           
-                <div class="md:w-1/2 w-full px-6">
-                     <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
-                        <FileText class="text-2xl text-blue-600 group-hover:text-white"/>
-                    </div>
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Integriertes Dokumentenmanagement</h3>
-                    <p class="text-lg text-gray-600 mb-2">Direktes Scannen nach Memova und Automatisiertes KI-Gestürztes Analysieren und zuordnen der Dokumente. Somit ersetzen Sie vollständig Ihren Papierordner und haben alle Unterlagen jederzeit und Ortsunabhängig zur Verfügung. Volltextsuche und ein ausgeklügeltes Tag-System halten auch bei grossen Papierbergen die Ordnung</p>
-                </div>
-                     <div class="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
-                    <img src="/images/screenshots/memos_read.png" alt="Digitale Dokumentation" class="rounded-xl shadow-lg w-full object-cover">
-                </div>
-            </div>
-
-            <!-- Feature 2: Text left, image right -->
-            <div class="flex flex-col md:flex-row-reverse items-center w-full mb-16">
-                <div class="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
-                    <div class="rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center aspect-video w-full max-w-md h-48">
-                        <Calculator class="text-6xl text-green-600"/>
-                    </div>
-                </div>
-                <div class="md:w-1/2 w-full px-6">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Automatische Abrechnung</h3>
-                    <p class="text-lg text-gray-600 mb-2">Erstellen Sie Abrechnungen per Knopfdruck. KESB-konforme Formate.</p>
-                </div>
-            </div>
-
-            <!-- Feature 3: Image left, text right -->
-            <div class="flex flex-col md:flex-row items-center w-full mb-16">
-                <div class="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
-                    <div class="rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center aspect-video w-full max-w-md h-48">
-                        <i data-lucide="chart-no-axes-combined" class="text-6xl text-purple-600"></i>
-                    </div>
-                </div>
-                <div class="md:w-1/2 w-full px-6">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Berichte & Statistiken</h3>
-                    <p class="text-lg text-gray-600 mb-2">Generieren Sie detaillierte Berichte für KESB und Klienten mit einem Klick.</p>
-                </div>
-            </div>
-
-            <!-- Feature 4: Text left, image right -->
-            <div class="flex flex-col md:flex-row-reverse items-center w-full mb-16">
-                <div class="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
-                    <img src="images/screenshots/clients_ai.png" alt="Klientenverwaltung" class="rounded-xl shadow-lg max-w-md w-full">
-                </div>
-                <div class="md:w-1/2 w-full px-6">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Klientenverwaltung</h3>
-                    <p class="text-lg text-gray-600 mb-2">Verwalten Sie alle Klientendaten sicher und übersichtlich an einem Ort.</p>
-                </div>
-            </div>
-
-            <!-- Feature 5: Image left, text right -->
-            <div class="flex flex-col md:flex-row items-center w-full mb-16">
-                <div class="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
-                    <div class="rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center aspect-video w-full max-w-md h-48">
-                        <i data-lucide="calendar-check-2" class="text-6xl text-red-600"></i>
-                    </div>
-                </div>
-                <div class="md:w-1/2 w-full px-6">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Termin & Fristen</h3>
-                    <p class="text-lg text-gray-600 mb-2">Behalten Sie alle wichtigen Termine und Fristen im Überblick.</p>
-                </div>
-            </div>
-
-            <!-- Feature 6: Text left, image right -->
-            <div class="flex flex-col md:flex-row-reverse items-center w-full mb-16">
-                <div class="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
-                    <div class="rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center aspect-video w-full max-w-md h-48">
-                        <i data-lucide="lock" class="text-6xl text-indigo-600"></i>
-                    </div>
-                </div>
-                <div class="md:w-1/2 w-full px-6">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Datenschutz & Sicherheit</h3>
-                    <p class="text-lg text-gray-600 mb-2">Schweizer Server, DSGVO-konform, verschlüsselte Übertragung.</p>
-                </div>
-            </div>
+        <!-- Shortcuts-->
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/screenshots/shortcuts.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
         </div>
-    </section>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Erfassen des Aufwands mit nur einem Klick</h3>
+              <p class="text-gray-600"
+                >Jedes Memo enstspricht geleisteter Arbeit und kann ohne weiteren Schritt in der Abrechung verwendet werden. Alternativ stehen
+                individualisierte Shortcuts für repetitive Aufwände wie bswp. Verarbeiten von Briefpost. So wird Ihre Arbeit mit nur einem Klick
+                korrekt in der Abrechung wiedergespiegelt!
+              </p>
+            </div>
+          </div>
 
-   
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Ortsunabhängig arbeiten</h3>
+              <p class="text-gray-600">Greifen Sie von überall auf Ihre Daten zu - ob im Büro, beim Klienten oder von zu Hause.</p>
+            </div>
+          </div>
 
-    <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold text-white mb-4">
-                Bereit, Ihre Arbeit zu vereinfachen?
-            </h2>
-            <p class="text-xl text-blue-100 mb-8">
-                Starten Sie noch heute mit 30 Tagen kostenloser Testphase
-            </p>
-            <button class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
-                Kostenlos testen - keine Kreditkarte erforderlich
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Keine Installation notwendig</h3>
+              <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Document Mangement Section -->
+  <section id="feature_documentation" class="bg-white py-20">
+    <div class="container mx-auto px-6">
+      <div class="mb-16 text-center">
+        <h2 class="mb-4 text-4xl font-bold text-gray-900">Dokumentenmanagement</h2>
+        <p class="text-xl text-gray-600">Komplete digitales Dokumentenmanegement inklusive</p>
+      </div>
+
+      <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Überblick auch bei komplexen Mandate</h3>
+              <p class="text-gray-600">Erstellen Sie in Sekundenschnelle neue Memos und Dokumentieren sie so chronologisch den Verlauf des Mandates</p
+              >
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Erfassen des Aufwands mit nur einem Klick</h3>
+              <p class="text-gray-600"
+                >Jedes Memo enstspricht geleisteter Arbeit und kann ohne weiteren Schritt in der Abrechung verwendet werden. Alternativ stehen
+                individualisierte Shortcuts für repetitive Aufwände wie bswp. Verarbeiten von Briefpost. So wird Ihre Arbeit mit nur einem Klick
+                korrekt in der Abrechung wiedergespiegelt!
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Ortsunabhängig arbeiten</h3>
+              <p class="text-gray-600">Greifen Sie von überall auf Ihre Daten zu - ob im Büro, beim Klienten oder von zu Hause.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Keine Installation notwendig</h3>
+              <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+        </div>
+
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+        </div>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Überblick auch bei komplexen Mandate</h3>
+              <p class="text-gray-600">Erstellen Sie in Sekundenschnelle neue Memos und Dokumentieren sie so chronologisch den Verlauf des Mandates</p
+              >
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Erfassen des Aufwands mit nur einem Klick</h3>
+              <p class="text-gray-600"
+                >Jedes Memo enstspricht geleisteter Arbeit und kann ohne weiteren Schritt in der Abrechung verwendet werden. Alternativ stehen
+                individualisierte Shortcuts für repetitive Aufwände wie bswp. Verarbeiten von Briefpost. So wird Ihre Arbeit mit nur einem Klick
+                korrekt in der Abrechung wiedergespiegelt!
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Ortsunabhängig arbeiten</h3>
+              <p class="text-gray-600">Greifen Sie von überall auf Ihre Daten zu - ob im Büro, beim Klienten oder von zu Hause.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Check class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Keine Installation notwendig</h3>
+              <p class="text-gray-600">Als WebApp sofort einsatzbereit - funktioniert auf allen Geräten mit Internetbrowser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features-alt" class="py-20">
+    <div class="container mx-auto">
+      <!-- Feature 1: Image left, text right -->
+      <div class="group transtion-all mb-16 flex w-full flex-col items-center rounded-lg py-10 duration-300 hover:shadow-xl md:flex-row md:px-10">
+        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
+          <img src="/images/screenshots/memos_read.png" alt="Digitale Dokumentation" class="w-full rounded-xl object-cover shadow-lg" />
+        </div>
+        <div class="w-full px-6 md:w-1/2">
+          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-blue-100 transition-colors group-hover:bg-blue-600">
+            <FileText class="text-2xl text-blue-600 group-hover:text-white" />
+          </div>
+          <h3 class="mb-4 text-3xl font-bold text-gray-900">Digitale Dokumentation</h3>
+          <p class="mb-2 text-lg text-gray-600"
+            >Dokumentieren sie alle Tätigkeiten und Aufwände in Memos. So behalten Sie immer den Überblick und erfassen gleichzeitig den Zeitaufwand
+            für spätere Abrechnungen. Alle Memos sind durchsuch- und filterbar sodass auch komplexe Mandate kein Problem werden.</p
+          >
+        </div>
+      </div>
+
+      <!-- Feature 2: Image right, text left -->
+      <div class="group transtion-all mb-16 flex w-full flex-col items-center rounded-lg p-10 duration-300 hover:shadow-xl md:flex-row">
+        <div class="w-full px-6 md:w-1/2">
+          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-blue-100 transition-colors group-hover:bg-blue-600">
+            <FileText class="text-2xl text-blue-600 group-hover:text-white" />
+          </div>
+          <h3 class="mb-4 text-3xl font-bold text-gray-900">Integriertes Dokumentenmanagement</h3>
+          <p class="mb-2 text-lg text-gray-600"
+            >Direktes Scannen nach Memova und Automatisiertes KI-Gestürztes Analysieren und zuordnen der Dokumente. Somit ersetzen Sie vollständig
+            Ihren Papierordner und haben alle Unterlagen jederzeit und Ortsunabhängig zur Verfügung. Volltextsuche und ein ausgeklügeltes Tag-System
+            halten auch bei grossen Papierbergen die Ordnung</p
+          >
+        </div>
+        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
+          <img src="/images/screenshots/memos_read.png" alt="Digitale Dokumentation" class="w-full rounded-xl object-cover shadow-lg" />
+        </div>
+      </div>
+
+      <!-- Feature 2: Text left, image right -->
+      <div class="mb-16 flex w-full flex-col items-center md:flex-row-reverse">
+        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
+          <div
+            class="flex aspect-video h-48 w-full max-w-md items-center justify-center rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg"
+          >
+            <Calculator class="text-6xl text-green-600" />
+          </div>
+        </div>
+        <div class="w-full px-6 md:w-1/2">
+          <h3 class="mb-4 text-3xl font-bold text-gray-900">Automatische Abrechnung</h3>
+          <p class="mb-2 text-lg text-gray-600">Erstellen Sie Abrechnungen per Knopfdruck. KESB-konforme Formate.</p>
+        </div>
+      </div>
+
+      <!-- Feature 3: Image left, text right -->
+      <div class="mb-16 flex w-full flex-col items-center md:flex-row">
+        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
+          <div
+            class="flex aspect-video h-48 w-full max-w-md items-center justify-center rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg"
+          >
+            <i data-lucide="chart-no-axes-combined" class="text-6xl text-purple-600"></i>
+          </div>
+        </div>
+        <div class="w-full px-6 md:w-1/2">
+          <h3 class="mb-4 text-3xl font-bold text-gray-900">Berichte & Statistiken</h3>
+          <p class="mb-2 text-lg text-gray-600">Generieren Sie detaillierte Berichte für KESB und Klienten mit einem Klick.</p>
+        </div>
+      </div>
+
+      <!-- Feature 4: Text left, image right -->
+      <div class="mb-16 flex w-full flex-col items-center md:flex-row-reverse">
+        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
+          <img src="images/screenshots/clients_ai.png" alt="Klientenverwaltung" class="w-full max-w-md rounded-xl shadow-lg" />
+        </div>
+        <div class="w-full px-6 md:w-1/2">
+          <h3 class="mb-4 text-3xl font-bold text-gray-900">Klientenverwaltung</h3>
+          <p class="mb-2 text-lg text-gray-600">Verwalten Sie alle Klientendaten sicher und übersichtlich an einem Ort.</p>
+        </div>
+      </div>
+
+      <!-- Feature 5: Image left, text right -->
+      <div class="mb-16 flex w-full flex-col items-center md:flex-row">
+        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
+          <div
+            class="flex aspect-video h-48 w-full max-w-md items-center justify-center rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg"
+          >
+            <i data-lucide="calendar-check-2" class="text-6xl text-red-600"></i>
+          </div>
+        </div>
+        <div class="w-full px-6 md:w-1/2">
+          <h3 class="mb-4 text-3xl font-bold text-gray-900">Termin & Fristen</h3>
+          <p class="mb-2 text-lg text-gray-600">Behalten Sie alle wichtigen Termine und Fristen im Überblick.</p>
+        </div>
+      </div>
+
+      <!-- Feature 6: Text left, image right -->
+      <div class="mb-16 flex w-full flex-col items-center md:flex-row-reverse">
+        <div class="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
+          <div
+            class="flex aspect-video h-48 w-full max-w-md items-center justify-center rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg"
+          >
+            <i data-lucide="lock" class="text-6xl text-indigo-600"></i>
+          </div>
+        </div>
+        <div class="w-full px-6 md:w-1/2">
+          <h3 class="mb-4 text-3xl font-bold text-gray-900">Datenschutz & Sicherheit</h3>
+          <p class="mb-2 text-lg text-gray-600">Schweizer Server, DSGVO-konform, verschlüsselte Übertragung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="mb-4 text-4xl font-bold text-white"> Bereit, Ihre Arbeit zu vereinfachen? </h2>
+      <p class="mb-8 text-xl text-blue-100"> Starten Sie noch heute mit 30 Tagen kostenloser Testphase </p>
+      <button
+        class="transform rounded-full bg-white px-8 py-4 font-semibold text-blue-600 shadow-xl transition-all hover:scale-105 hover:bg-gray-100"
+      >
+        Kostenlos testen - keine Kreditkarte erforderlich
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="kontakt" class="bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+      <div class="mx-auto max-w-4xl">
+        <div class="mb-12 text-center">
+          <h2 class="mb-4 text-4xl font-bold text-gray-900">Kontaktieren Sie uns</h2>
+          <p class="text-xl text-gray-600">Wir helfen Ihnen gerne weiter</p>
+        </div>
+
+        <div class="rounded-2xl bg-white p-8 shadow-xl md:p-12">
+          <form class="space-y-6">
+            <div class="grid gap-6 md:grid-cols-2">
+              <div>
+                <label class="mb-2 block font-semibold text-gray-700">Vorname</label>
+                <input type="text" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
+              </div>
+              <div>
+                <label class="mb-2 block font-semibold text-gray-700">Nachname</label>
+                <input type="text" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
+              </div>
+            </div>
+            <div>
+              <label class="mb-2 block font-semibold text-gray-700">E-Mail</label>
+              <input type="email" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
+            </div>
+            <div>
+              <label class="mb-2 block font-semibold text-gray-700">Organisation</label>
+              <input type="text" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
+            </div>
+            <div>
+              <label class="mb-2 block font-semibold text-gray-700">Nachricht</label>
+              <textarea rows="4" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"></textarea>
+            </div>
+            <button type="submit" class="w-full rounded-full bg-blue-600 py-4 font-semibold text-white transition-colors hover:bg-blue-700">
+              Nachricht senden
             </button>
+          </form>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="kontakt" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Kontaktieren Sie uns</h2>
-                    <p class="text-xl text-gray-600">Wir helfen Ihnen gerne weiter</p>
-                </div>
-
-                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-                    <form class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-gray-700 font-semibold mb-2">Vorname</label>
-                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-semibold mb-2">Nachname</label>
-                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-semibold mb-2">E-Mail</label>
-                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-semibold mb-2">Organisation</label>
-                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-semibold mb-2">Nachricht</label>
-                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-full font-semibold hover:bg-blue-700 transition-colors">
-                            Nachricht senden
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
+      </div>
+    </div>
+  </section>
 </Layout>
