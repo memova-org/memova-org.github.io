@@ -7,18 +7,36 @@ interface Props {
   icon: typeof IconType;
   image: string;
   imageAlt?: string;
-  color: string;
+  color: "blue" | "orange" | "red" | "green" | "purple" | "indigo";
   link?: string;
 }
 
 const { title, description, icon: Icon, image, color, link, imageAlt } = Astro.props;
-const iconTextColor = `text-${color}-600`;
-const iconContainerColor = `bg-${color}-100 group-hover:bg-${color}-600`;
+
+const iconColorVariants = {
+  blue: "text-blue-600",
+  orange: "text-orange-600",
+  red: "text-red-600",
+  green: "text-green-600",
+  purple: "text-purple-600",
+  indigo: "text-indigo-600",
+};
+const iconContainerVariants = {
+  blue: "bg-blue-100 group-hover:bg-blue-600",
+  orange: "bg-orange-100 group-hover:bg-orange-600",
+  red: "bg-red-100 group-hover:bg-red-600",
+  green: "bg-green-100 group-hover:bg-green-600",
+  purple: "bg-purple-100 group-hover:bg-purple-600",
+  indigo: "bg-indigo-100 group-hover:bg-indigo-600",
+};
+
+const iconVariantClass = iconColorVariants[color];
+const iconContainerColor = iconContainerVariants[color];
 ---
 
 <a class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl" href={link ?? ""}>
-  <div class={`mb-6 flex h-14 w-14 items-center justify-center rounded-lg transition-colors ${iconContainerColor}`}>
-    <Icon class={`text-2l ${iconTextColor} group-hover:text-white`} />
+  <div class:list={["mb-6 flex h-14 w-14 items-center justify-center rounded-lg transition-colors", iconContainerColor]}>
+    <Icon class:list={["text-2l group-hover:text-white", iconVariantClass]} />
   </div>
   <h3 class="mb-3 text-xl font-bold text-gray-900">{title}</h3>
   <p class="mb-4 text-gray-600">{description}</p>
