@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { NotebookPen, Files, Check, Users } from "@lucide/astro";
+import { NotebookPen, Files, Check, Users, Calculator, ChartNoAxesColumn, Lock } from "@lucide/astro";
 import HeroComponent from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import FeaturePreview from "../components/feature_preview.astro";
@@ -37,65 +37,45 @@ import FeaturePreview from "../components/feature_preview.astro";
           link="/features#feature_documentation"
         />
 
-        <!-- Feature Digitale Dokumentation-->
-        <a class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl" href="/features">
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-blue-100 transition-colors group-hover:bg-blue-600">
-            <NotebookPen class="text-2xl text-blue-600 group-hover:text-white" />
-          </div>
-          <h3 class="mb-3 text-xl font-bold text-gray-900">Digitale Fallführung</h3>
-          <p class="mb-4 text-gray-600">Erfassen Sie alle Tätigkeiten strukturiert und vollständig Digital</p>
-          <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
-            <img src="/images/screenshots/memos_read.png" alt="Memos Screenshot" />
-          </div>
-        </a>
+        <FeaturePreview
+          title="Dokumenten-Management-System (DMS)"
+          description="Leistungsstarkes Modul zur Kient*innen basierten Organisation von Dokumenten"
+          icon={Files}
+          image="/images/illustrations/documents_general.png"
+          imageAlt="Memova Illustration Dokumentenmanagement"
+          color="red"
+          link="/features#feature_documents"
+        />
 
-        <!-- Feature Documents Management -->
-        <a href="/features#feature_documents" class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl">
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-red-100 transition-colors group-hover:bg-red-600">
-            <Files class="text-2xl text-red-600 group-hover:text-white" />
-          </div>
-          <h3 class="mb-3 text-xl font-bold text-gray-900">Dokumenten-Management-System (DMS)</h3>
-          <p class="mb-4 text-gray-600">Leistungsstarkes Modul zur Kient*innen basierten Organisation von Dokumenten</p>
-          <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
-            <img src="/images/illustrations/documents_general.png" alt="Documents Illustration" />
-          </div>
-        </a>
+        <FeaturePreview
+          title="Automatische Abrechnung"
+          description="Erstellen Sie Abrechnungen per Knopfdruck. KESB-konforme Formate."
+          icon={Calculator}
+          image="/images/illustrations/billing_general.png"
+          imageAlt="Memova Illustration Abrechnung"
+          color="green"
+          link="/features#feature_billing"
+        />
 
-        <!-- Feature 2 -->
-        <div class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl">
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-green-100 transition-colors group-hover:bg-green-600">
-            <i data-lucide="calculator" class="text-2xl text-green-600 group-hover:text-white"></i>
-          </div>
-          <h3 class="mb-3 text-xl font-bold text-gray-900">Automatische Abrechnung</h3>
-          <p class="mb-4 text-gray-600">Erstellen Sie Abrechnungen per Knopfdruck. KESB-konforme Formate.</p>
-          <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
-            <i data-lucide="image" class="h-12 w-12 text-gray-300"></i>
-          </div>
-        </div>
+        <FeaturePreview
+          title="Berichte & Statistiken"
+          description="Generieren Sie detaillierte Berichte für KESB und Klienten mit einem Klick."
+          icon={ChartNoAxesColumn}
+          image="/images/illustrations/reports_general.png"
+          imageAlt="Memova Illustration Berichte und Statistiken"
+          color="purple"
+          link="/features#feature_reports"
+        />
 
-        <!-- Feature 3 -->
-        <div class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl">
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-purple-100 transition-colors group-hover:bg-purple-600">
-            <i data-lucide="chart-no-axes-combined" class="text-2xl text-purple-600 group-hover:text-white"></i>
-          </div>
-          <h3 class="mb-3 text-xl font-bold text-gray-900">Berichte & Statistiken</h3>
-          <p class="mb-4 text-gray-600">Generieren Sie detaillierte Berichte für KESB und Klienten mit einem Klick.</p>
-          <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
-            <i data-lucide="image" class="h-12 w-12 text-gray-300"></i>
-          </div>
-        </div>
-
-        <!-- Feature 6 -->
-        <div class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl">
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-indigo-100 transition-colors group-hover:bg-indigo-600">
-            <i data-lucide="lock" class="text-2xl text-indigo-600 group-hover:text-white"></i>
-          </div>
-          <h3 class="mb-3 text-xl font-bold text-gray-900">Datenschutz & Sicherheit</h3>
-          <p class="mb-4 text-gray-600">Schweizer Server, DSGVO-konform, verschlüsselte Übertragung.</p>
-          <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
-            <i data-lucide="lock" class="text-4xl text-gray-300"></i>
-          </div>
-        </div>
+        <FeaturePreview
+          title="Sicherheit & Datenschutz"
+          description="Verschlüssellung und Datenschutz nach aktuellen Standards"
+          icon={Lock}
+          image="/images/illustrations/security.png"
+          imageAlt="Memova Illustration Sicherheit"
+          color="indigo"
+          link="/features#security"
+        />
       </div>
     </div>
   </section>
