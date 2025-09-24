@@ -3,6 +3,7 @@ import "../styles/global.css";
 import { NotebookPen, Files, Check, Users } from "@lucide/astro";
 import HeroComponent from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
+import FeaturePreview from "../components/feature_preview.astro";
 ---
 
 <Layout>
@@ -17,17 +18,24 @@ import Layout from "../layouts/Layout.astro";
       </div>
 
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Feature Klient*innen Verwaltung 4 -->
-        <div class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl">
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-orange-100 transition-colors group-hover:bg-orange-600">
-            <Users class="text-2xl text-orange-600 group-hover:text-white" />
-          </div>
-          <h3 class="mb-3 text-xl font-bold text-gray-900">Klient*innenverwaltung</h3>
-          <p class="mb-4 text-gray-600">Strukturierte Übersicht über alle Stammdaten und relevanten Beziehungen von Klient*innen</p>
-          <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
-            <img src="/images/illustrations/clients_general.png" alt="Memos Screenshot" />
-          </div>
-        </div>
+        <FeaturePreview
+          title="Klient*innenverwaltung"
+          description="Strukturierte Übersicht über alle Stammdaten und relevanten Beziehungen von Klient*innen"
+          icon={Users}
+          image="/images/illustrations/clients_general.png"
+          imageAlt="Memova Illustration Klientenverwaltung"
+          color="orange"
+        />
+
+        <FeaturePreview
+          title="Digitale Fallführung"
+          description="Erfassen Sie alle Tätigkeiten strukturiert und vollständig Digital"
+          icon={NotebookPen}
+          image="/images/screenshots/memos_read.png"
+          imageAlt="Memova Screenshopt Digitale Fallführung"
+          color="blue"
+          link="/features#feature_documentation"
+        />
 
         <!-- Feature Digitale Dokumentation-->
         <a class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl" href="/features">
