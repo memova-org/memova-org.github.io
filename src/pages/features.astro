@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <!-- Feature Document Mangement Section -->
+  <!-- Feature Client Section -->
   <section id="feature_clients" class="bg-white py-20">
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
@@ -331,58 +331,138 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
+  <!-- Feature Client Section -->
+  <section id="feature_security" class="bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+      <div class="mb-16 text-center">
+        <h2 class="mb-4 text-4xl font-bold text-gray-900">Sicherheit und Datenschutz</h2>
+        <p class="text-xl text-gray-600">Wir legen besonderen Wert auf Datenschutz und Integrität</p>
+      </div>
+
+      <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Users class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Schweizer Produkt</h3>
+              <p class="text-gray-600">Memova wurde vollständig in der Schweiz entwickelt</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Tag class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Datenspeicherung auf schweizer Servern</h3>
+              <p class="text-gray-600">
+                Alle Daten werden ausschliessich von schweizer Anbieterinnen auf Servern in der Schweiz gespeichert und verarbeitet. Unsere Hosting
+                Partner sind alle ISO Zertifiziert.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Binoculars class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Schutz vor Datenverlust</h3>
+              <p class="text-gray-600"
+                >Ihre Daten werden stündlich verschlüsselt und auf einen Seperaten Server-Standort in der Schweiz gesichert und können im Ernstfall
+                verwendet werden</p
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/screenshots/documents_view.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+        </div>
+
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/illustrations/scan_workflow.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+        </div>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <FileScan class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Audit-Log</h3>
+              <p class="text-gray-600">Administrator*innen haben Zugriff auf ein Audit-Log um Änderungen nachzuvollziehen. </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Binary class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900"></h3>
+              <p class="text-gray-600"
+                >Jedes Dokument wird automatisch digitalisiert, KI gestützt analysiert und anschliessend mit den passenden Schlagworten versehen den
+                jeweiligen Klient*innen zugeordnet.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Megaphone class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Inbox für neue Dokumente</h3>
+              <p class="text-gray-600"
+                >Neue Dokumente erscheinen nach der Verarbeitung im digitalen Posteingang der Memova APP und gehen so nie unter</p
+              >
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Package2 class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Papier-Archiv im Minimum</h3>
+              <p class="text-gray-600"
+                >Mittels eingebauter Barcode-Funktion kann jeder Brief vor dem Scannen gekennzeichnet werden. So kann ein Dokument aus der Memova-APP
+                jederzeit ihrem originalen Papierdokument zugeordnet werden. Dies erspart lästiges Führen von Mandatsordnern. Eine Kiste mit mit allen
+                Dokumenten reicht!</p
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Section -->
   <section class="bg-gradient-to-r from-blue-600 to-indigo-600 py-20">
     <div class="container mx-auto px-6 text-center">
       <h2 class="mb-4 text-4xl font-bold text-white"> Bereit, Ihre Arbeit zu vereinfachen? </h2>
-      <p class="mb-8 text-xl text-blue-100"> Starten Sie noch heute mit 30 Tagen kostenloser Testphase </p>
+      <p class="mb-8 text-xl text-blue-100"> Starten Sie noch heute Ihren weg in die digitale Mandatsführung mit Memova </p>
       <button
         class="transform rounded-full bg-white px-8 py-4 font-semibold text-blue-600 shadow-xl transition-all hover:scale-105 hover:bg-gray-100"
       >
-        Kostenlos testen - keine Kreditkarte erforderlich
+        Kontaktieren Sie uns für eine konstenlose Demonstration
       </button>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="kontakt" class="bg-gray-50 py-20">
-    <div class="container mx-auto px-6">
-      <div class="mx-auto max-w-4xl">
-        <div class="mb-12 text-center">
-          <h2 class="mb-4 text-4xl font-bold text-gray-900">Kontaktieren Sie uns</h2>
-          <p class="text-xl text-gray-600">Wir helfen Ihnen gerne weiter</p>
-        </div>
-
-        <div class="rounded-2xl bg-white p-8 shadow-xl md:p-12">
-          <form class="space-y-6">
-            <div class="grid gap-6 md:grid-cols-2">
-              <div>
-                <label class="mb-2 block font-semibold text-gray-700">Vorname</label>
-                <input type="text" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
-              </div>
-              <div>
-                <label class="mb-2 block font-semibold text-gray-700">Nachname</label>
-                <input type="text" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
-              </div>
-            </div>
-            <div>
-              <label class="mb-2 block font-semibold text-gray-700">E-Mail</label>
-              <input type="email" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
-            </div>
-            <div>
-              <label class="mb-2 block font-semibold text-gray-700">Organisation</label>
-              <input type="text" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
-            </div>
-            <div>
-              <label class="mb-2 block font-semibold text-gray-700">Nachricht</label>
-              <textarea rows="4" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"></textarea>
-            </div>
-            <button type="submit" class="w-full rounded-full bg-blue-600 py-4 font-semibold text-white transition-colors hover:bg-blue-700">
-              Nachricht senden
-            </button>
-          </form>
-        </div>
-      </div>
     </div>
   </section>
 </Layout>

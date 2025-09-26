@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { NotebookPen, Files, Check, Users, Calculator, ChartNoAxesColumn, Lock } from "@lucide/astro";
+import { NotebookPen, Files, Check, Users, ChartNoAxesColumn, Lock, CloudCheck } from "@lucide/astro";
 import HeroComponent from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import FeaturePreview from "../components/feature_preview.astro";
@@ -30,7 +30,7 @@ import FeaturePreview from "../components/feature_preview.astro";
 
         <FeaturePreview
           title="Digitale Fallführung"
-          description="Erfassen Sie alle Tätigkeiten strukturiert und vollständig Digital"
+          description="Vollständig digitale Fallführung durch Dockumentation von Tätigkeiten in Memos"
           icon={NotebookPen}
           image="/images/illustrations/memos_general.png"
           imageAlt="Memova Screenshopt Digitale Fallführung"
@@ -49,9 +49,9 @@ import FeaturePreview from "../components/feature_preview.astro";
         />
 
         <FeaturePreview
-          title="Automatische Abrechnung"
-          description="Erstellen Sie Abrechnungen per Knopfdruck. KESB-konforme Formate."
-          icon={Calculator}
+          title="Berichte und Statistiken"
+          description="Tätigkeitsberichte, Abrechungen und Statistiken in nur wenigen Klicks generieren "
+          icon={ChartNoAxesColumn}
           image="/images/illustrations/billing_general.png"
           imageAlt="Memova Illustration Abrechnung"
           color="green"
@@ -59,23 +59,23 @@ import FeaturePreview from "../components/feature_preview.astro";
         />
 
         <FeaturePreview
-          title="Berichte & Statistiken"
-          description="Generieren Sie detaillierte Berichte für KESB und Klienten mit einem Klick."
-          icon={ChartNoAxesColumn}
+          title="Webbasierte Anwendung"
+          description="Vollständig webbasierte Anwendung - keine Installation und keine IT-Kosten"
+          icon={CloudCheck}
           image="/images/illustrations/reports_general.png"
-          imageAlt="Memova Illustration Berichte und Statistiken"
+          imageAlt="Memova Illustration Cloud"
           color="purple"
-          link="/features#feature_reports"
+          link="/features#feature_webapp"
         />
 
         <FeaturePreview
-          title="Sicherheit & Datenschutz"
+          title="Sicherheit, Datenschutz "
           description="Verschlüssellung und Datenschutz nach aktuellen Standards"
           icon={Lock}
           image="/images/illustrations/security.png"
           imageAlt="Memova Illustration Sicherheit"
           color="indigo"
-          link="/features#security"
+          link="/features#feature_security"
         />
       </div>
     </div>
