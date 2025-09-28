@@ -5,12 +5,11 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <!-- Feature Client Section -->
   <section id="feature_clients" class="bg-white py-20">
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Klient*innenverwaltung</h2>
-        <p class="text-xl text-gray-600">Ein leistungstarkes integriertes Dokumenten-Management-System immer zur Hand</p>
+        <p class="text-xl text-gray-600">Erfasen und Darstellen aller relevanten Informationen zu Klien*innen in der Zentralen Übersicht</p>
       </div>
 
       <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
@@ -18,15 +17,41 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Binoculars class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Zentrale Übersicht</h3>
+              <p class="text-gray-600"
+                >Auf der Klient*innen Übersicht werden Kontaktdaten, Beziehungen, Memos sowie die Dokumente zentral und Übersichtlich dargestellt. Sie
+                dient als Zugangspunkt zu allen Mandatsrelevanten Informationen.</p
+              >
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
                 <Users class="text-lg text-white" />
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Zentrales Dashboard</h3>
-              <p class="text-gray-600">Die Klient*innen-Übersicht zeigt alle für ein Mandat relevanten Informationen auf einen Blick</p>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Stammdaten</h3>
+              <p class="text-gray-600"
+                >Adressen, Kennnummern und Kontaktdaten werden übersichtlich erfasst und dargestellt. Sie können mit einem Klick kopiert und in
+                externen Diensten wie Email- oder Buchhaltungsprogrammen verwendet werden.</p
+              >
             </div>
           </div>
+        </div>
 
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/screenshots/client_infos.png" alt="Klient*innen Dashboard" class="mb-6 rounded-lg" />
+        </div>
+
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/screenshots/client_relations.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+        </div>
+        <div class="space-y-6">
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
@@ -34,14 +59,10 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Beziehungen und Kontaktpersonen ohne Einschränkungen</h3>
-              <p class="text-gray-600">
-                Bilden Sie das Beziehungsnetzwerk Ihrer Klient*innen ab. Verknüpfen Sie beliebig viele Kontaktpersonen und Institutionen mit einem
-                Mandat
-              </p>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Beziehungen und Kontaktpersonen</h3>
+              <p class="text-gray-600"> Für die Klient*innen relevante Beziehungen und Kontaktpersonen können erfasst und dargestellt werden. </p>
             </div>
           </div>
-
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
@@ -51,73 +72,8 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Bankverbindungen und Abos</h3>
               <p class="text-gray-600"
-                >Erfassen Sie auch mehrere Bankverbindungen oder Speichern Sie die Abonemente ihrer Klient*innen um den Überblick zu halten.</p
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <img src="/images/screenshots/documents_view.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
-        </div>
-
-        <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <img src="/images/illustrations/scan_workflow.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
-        </div>
-        <div class="space-y-6">
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <FileScan class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Scannen in die APP</h3>
-              <p class="text-gray-600">Direktes Scannen und verschlüsselte Übertragung von Dokumenten vom lokalen Scanner in die Memova App</p>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Binary class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">KI Gestützte Dokumentenanalyse</h3>
-              <p class="text-gray-600"
-                >Jedes Dokument wird automatisch digitalisiert, KI gestützt analysiert und anschliessend mit den passenden Schlagworten versehen den
-                jeweiligen Klient*innen zugeordnet.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Megaphone class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Inbox für neue Dokumente</h3>
-              <p class="text-gray-600"
-                >Neue Dokumente erscheinen nach der Verarbeitung im digitalen Posteingang der Memova APP und gehen so nie unter</p
-              >
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Package2 class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Papier-Archiv im Minimum</h3>
-              <p class="text-gray-600"
-                >Mittels eingebauter Barcode-Funktion kann jeder Brief vor dem Scannen gekennzeichnet werden. So kann ein Dokument aus der Memova-APP
-                jederzeit ihrem originalen Papierdokument zugeordnet werden. Dies erspart lästiges Führen von Mandatsordnern. Eine Kiste mit mit allen
-                Dokumenten reicht!</p
+                >Durch die offene Gestaltung werden mittels Beziehungen auch Abonemente, Bankverbindungen und andere für die Klient*innen relevante
+                Organisationen, Institutionen und Personen erfasst</p
               >
             </div>
           </div>
@@ -131,7 +87,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Digitale Fallführung</h2>
-        <p class="text-xl text-gray-600">Erfassen Sie ihre tägliche Arbeit in Memos</p>
+        <p class="text-xl text-gray-600">Erfassen von Memos (Akteneinträge) - Leistungserfassung und Dokumentation zugleich </p>
       </div>
 
       <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
@@ -157,7 +113,7 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Volltextsuche und Filter</h3>
               <p class="text-gray-600"
-                >Leistungsstarke Such- und Filteroptionen ermöglichen Ihnen schnell und Präszise an die relevanten Informationen zu kommen</p
+                >Leistungsstarke Such- und Filteroptionen ermöglichen es, schnell und Präszise an die relevanten Informationen zu kommen</p
               >
             </div>
           </div>
@@ -171,8 +127,8 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Auch für unterwegs</h3>
               <p class="text-gray-600"
-                >Als Mobile-Fähige WebAPP können Sie ihre Memos auch von unterwegs mit ihrem Smartphone diktieren. Zurück im Büro ist so auch schon
-                abgerechnet!</p
+                >Als Mobile-Fähige WebAPP können Memos auch von unterwegs mit dem Smartphone diktiert werden. Durch die Zeiterfassung in den Memos ist
+                damit auch bereits abgerechnet</p
               >
             </div>
           </div>
@@ -194,10 +150,24 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Erfassen des Aufwands mit nur einem Klick</h3>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Transparente Zeiterfassung</h3>
               <p class="text-gray-600"
-                >Ihre geleistete Arbeit können Sie direkt im Klientendashboard abrechnen. Für wiederkehrende Tätigkeiten können Sie Shortcuts
-                erstellen um diese mit nur einem Klick zu erfassen. So sparen Sie Zeit und können sich auf das Wesentliche konzentrieren.</p
+                >Die geleistete Arbeit kann direkt in den Memos abgerechnet werden. Jedem Memo kann eine Dauer zugewiesen werden. So ist für die
+                Revision auch ersichtlich für welche Tätigkeiten die Verrechnete Zeit aufgewendet wurde.</p
+              >
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Timer class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Schnelltasten (Shortcuts) für repetitive Arbeiten</h3>
+              <p class="text-gray-600"
+                >Repetitive Tätigkeiten können als Shortcuts gespeichert werden. Dadurch ist es möglich diese auch ohne Erstellen eines eigenen Memos
+                mit nur einem Klick zu erfassen und abzurechnen.</p
               >
             </div>
           </div>
@@ -211,7 +181,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Dokumentenmanagement</h2>
-        <p class="text-xl text-gray-600">Ein leistungstarkes integriertes Dokumenten-Management-System immer zur Hand</p>
+        <p class="text-xl text-gray-600">Ein leistungstarkes integriertes Dokumenten-Management-System ersetzt Papierordner</p>
       </div>
 
       <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
@@ -225,9 +195,9 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Klient*innenbasiertes Ablagesystem</h3>
               <p class="text-gray-600"
-                >Die Dokumente der Klient*in werden übersichtlich auf dem Klientendashboard dargestellt und stehen jederzeit mit nur einem Klick zur
-                Verfügung</p
-              >
+                >Die Dokumente der Klient*in werden übersichtlich auf dem Klientendashboard dargestellt. Nutzer*innenspezifische Sortiereinstellungen
+                werden lokal gespeichert.
+              </p>
             </div>
           </div>
 
@@ -240,8 +210,8 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Flexible Verschlagwortung</h3>
               <p class="text-gray-600">
-                Dokumente können mit Tags (Schlagworten) versehen werden um sie so einfach zu kategorisieren und wiederzufinden. Erstellen Sie Ihre
-                eigenen Tags um Ihre Dokumente individuell zu organisieren.
+                Dokumente können mit Tags (Schlagworten) versehen werden um sie so einfach zu kategorisieren und wiederzufinden. Die Tags können frei
+                gewählt werden um Unternehmensspezifische Abläufe präzise aubzubilden.
               </p>
             </div>
           </div>
@@ -256,8 +226,8 @@ import Layout from "../layouts/Layout.astro";
               <h3 class="mb-2 text-xl font-bold text-gray-900">Volltextsuche und Filteroptionen</h3>
               <p class="text-gray-600"
                 >Alle Dokumente werden automatisch mittels Volltextsuche durchsuchbar gemacht. Zudem stehen verschiedene Filteroptionen zur Verfügung
-                sodass Sie auch nach Jahren jedes Dokument schnell finden</p
-              >
+                sodass auch in komplexen und langjährigen Mandaten alle Unterlagen geordnet bleiben.
+              </p>
             </div>
           </div>
         </div>
@@ -278,7 +248,10 @@ import Layout from "../layouts/Layout.astro";
             </div>
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Scannen in die APP</h3>
-              <p class="text-gray-600">Direktes Scannen und verschlüsselte Übertragung von Dokumenten vom lokalen Scanner in die Memova App</p>
+              <p class="text-gray-600"
+                >Direktes Scannen und verschlüsselte Übertragung von Dokumenten vom lokalen Scanner in die Memova App. Durch die integrierte
+                Barcode-Funktion werden auch grosse Stapel an unsortierten Briefen aufs Mal gescannt und automatisiert getrennt verarbeitet.</p
+              >
             </div>
           </div>
 
@@ -306,8 +279,8 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Inbox für neue Dokumente</h3>
               <p class="text-gray-600"
-                >Neue Dokumente erscheinen nach der Verarbeitung im digitalen Posteingang der Memova APP und gehen so nie unter</p
-              >
+                >Neue Dokumente erscheinen nach der Verarbeitung im digitalen Posteingang der Memova APP und sind mit einem Posteingangs-Tag versehen.
+              </p>
             </div>
           </div>
 
@@ -320,10 +293,11 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Papier-Archiv im Minimum</h3>
               <p class="text-gray-600"
-                >Mittels eingebauter Barcode-Funktion kann jeder Brief vor dem Scannen gekennzeichnet werden. So kann ein Dokument aus der Memova-APP
-                jederzeit ihrem originalen Papierdokument zugeordnet werden. Dies erspart lästiges Führen von Mandatsordnern. Eine Kiste mit mit allen
-                Dokumenten reicht!</p
-              >
+                >Mittels eingebauter Barcode-Funktion kann jeder Brief vor dem Scannen gekennzeichnet werden. So wird jedes digitale Dokument in
+                Memova ihrem originalen Papierdokument zugeordnet. Die Originaldokumente können im minimum nach Barcode-Nummer sortiert gemeinsam
+                abgelegt werden. Wir das Original benötigt, helfen die Such- und Filteroptionen in Memova das Dokument zu finden und die zugehörige
+                Barcode-Nummer auszulesen. Diese zeigt dann den Standort des Originaldokumentes an.
+              </p>
             </div>
           </div>
         </div>
@@ -336,7 +310,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Sicherheit und Datenschutz</h2>
-        <p class="text-xl text-gray-600">Wir legen besonderen Wert auf Datenschutz und Integrität</p>
+        <p class="text-xl text-gray-600">Wir legen besonderen Wert auf Datenschutz und -sicherheit</p>
       </div>
 
       <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
@@ -362,8 +336,8 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Datenspeicherung auf schweizer Servern</h3>
               <p class="text-gray-600">
-                Alle Daten werden ausschliessich von schweizer Anbieterinnen auf Servern in der Schweiz gespeichert und verarbeitet. Unsere Hosting
-                Partner sind alle ISO Zertifiziert.
+                Alle Daten werden ausschliessich von schweizer Anbieterinnen auf Servern in der Schweiz gespeichert und verarbeitet und unterliegen
+                somit dem strengen schweizer Datenschutzgesetz.
               </p>
             </div>
           </div>
@@ -377,9 +351,9 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <h3 class="mb-2 text-xl font-bold text-gray-900">Schutz vor Datenverlust</h3>
               <p class="text-gray-600"
-                >Ihre Daten werden stündlich verschlüsselt und auf einen Seperaten Server-Standort in der Schweiz gesichert und können im Ernstfall
-                verwendet werden</p
-              >
+                >Ihre Daten werden stündlich verschlüsselt und auf einem seperaten Server-Standort in der Schweiz gesichert. Im ernstfall kann die
+                Wiederherstellung der Daten so ohne Zeit- und Informationsverlust erfolgen.
+              </p>
             </div>
           </div>
         </div>
@@ -407,44 +381,14 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Binary class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900"></h3>
-              <p class="text-gray-600"
-                >Jedes Dokument wird automatisch digitalisiert, KI gestützt analysiert und anschliessend mit den passenden Schlagworten versehen den
-                jeweiligen Klient*innen zugeordnet.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
                 <Megaphone class="text-lg text-white" />
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Inbox für neue Dokumente</h3>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Schutz vor Phishing</h3>
               <p class="text-gray-600"
-                >Neue Dokumente erscheinen nach der Verarbeitung im digitalen Posteingang der Memova APP und gehen so nie unter</p
-              >
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Package2 class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Papier-Archiv im Minimum</h3>
-              <p class="text-gray-600"
-                >Mittels eingebauter Barcode-Funktion kann jeder Brief vor dem Scannen gekennzeichnet werden. So kann ein Dokument aus der Memova-APP
-                jederzeit ihrem originalen Papierdokument zugeordnet werden. Dies erspart lästiges Führen von Mandatsordnern. Eine Kiste mit mit allen
-                Dokumenten reicht!</p
+                >Durch eingebaute Sicherheitsmechanismen wie das passwortlose Loginverfahren mittels Passkeys wird das Risiko vor Phishing- und
+                Ransomware-Attacken reduziert</p
               >
             </div>
           </div>
