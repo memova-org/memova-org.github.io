@@ -14,20 +14,20 @@ interface Props {
 const { title, description, icon: Icon, image, color, link, imageAlt } = Astro.props;
 
 const iconColorVariants = {
-  blue: "text-blue-600",
-  orange: "text-orange-600",
-  red: "text-red-600",
-  green: "text-green-600",
-  purple: "text-purple-600",
-  indigo: "text-indigo-600",
+  blue: "text-black",
+  orange: "text-black",
+  red: "text-black",
+  green: "text-black",
+  purple: "text-black",
+  indigo: "text-black",
 };
 const iconContainerVariants = {
-  blue: "bg-blue-100 group-hover:bg-blue-600",
-  orange: "bg-orange-100 group-hover:bg-orange-600",
-  red: "bg-red-100 group-hover:bg-red-600",
-  green: "bg-green-100 group-hover:bg-green-600",
-  purple: "bg-purple-100 group-hover:bg-purple-600",
-  indigo: "bg-indigo-100 group-hover:bg-indigo-600",
+  blue: "bg-pastel-blue group-hover:bg-pastel-blue-dark",
+  orange: "bg-pastel-orange group-hover:bg-pastel-orange-dark",
+  red: "bg-pastel-red group-hover:bg-pastel-red-dark",
+  green: "bg-pastel-green group-hover:bg-pastel-green-dark",
+  purple: "bg-pastel-purple group-hover:bg-pastel-purple-dark",
+  indigo: "bg-pastel-indigo group-hover:bg-pastel-indigo-dark",
 };
 
 const iconVariantClass = iconColorVariants[color];

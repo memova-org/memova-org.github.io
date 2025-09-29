@@ -132,7 +132,7 @@ import FeaturePreview from "../components/feature_preview.astro";
         <div class="space-y-6">
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
                 <Check class="text-lg text-white" />
               </div>
             </div>
@@ -147,7 +147,7 @@ import FeaturePreview from "../components/feature_preview.astro";
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
                 <Check class="text-lg text-white" />
               </div>
             </div>
@@ -159,7 +159,7 @@ import FeaturePreview from "../components/feature_preview.astro";
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
                 <Check class="text-lg text-white" />
               </div>
             </div>
@@ -171,7 +171,7 @@ import FeaturePreview from "../components/feature_preview.astro";
 
           <div class="flex gap-4">
             <div class="flex-shrink-0">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
                 <Check class="text-lg text-white" />
               </div>
             </div>
@@ -189,15 +189,15 @@ import FeaturePreview from "../components/feature_preview.astro";
 
           <div class="grid grid-cols-3 gap-4 text-center">
             <div>
-              <div class="text-3xl font-bold text-blue-600">Mehr</div>
+              <div class="text-pastel-blue text-3xl font-bold">Mehr</div>
               <div class="text-sm text-gray-600">Zeit für Ihre Klient*innen</div>
             </div>
             <div>
-              <div class="text-3xl font-bold text-green-600">100%</div>
+              <div class="text-pastel-green text-3xl font-bold">100%</div>
               <div class="text-sm text-gray-600">Digital</div>
             </div>
             <div>
-              <div class="text-3xl font-bold text-purple-600">24/7</div>
+              <div class="text-pastel-purple text-3xl font-bold">24/7</div>
               <div class="text-sm text-gray-600">Verfügbar</div>
             </div>
           </div>
@@ -216,7 +216,7 @@ import FeaturePreview from "../components/feature_preview.astro";
 
       <div class="mx-auto grid max-w-5xl gap-8 md:grid-cols-3">
         <!-- Basic Plan -->
-        <div class="rounded-2xl border-2 border-gray-200 p-8 transition-all hover:border-blue-500">
+        <div class="hover:border-brand rounded-2xl border-2 border-gray-200 p-8 transition-all">
           <div class="mb-8 text-center">
             <h3 class="mb-4 text-2xl font-bold text-gray-900">Basis</h3>
             <div class="mb-2 text-5xl font-bold text-gray-900">
@@ -227,31 +227,31 @@ import FeaturePreview from "../components/feature_preview.astro";
           </div>
           <ul class="mb-8 space-y-4">
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Bis zu 10 Klienten</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Digitale Dokumentation</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Basis-Berichte</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>E-Mail Support</span>
             </li>
           </ul>
-          <button class="w-full rounded-full border-2 border-blue-600 py-3 font-semibold text-blue-600 transition-colors hover:bg-blue-50">
+          <button class="border-brand text-brand w-full rounded-full border-2 py-3 font-semibold transition-colors hover:bg-blue-50">
             Jetzt starten
           </button>
         </div>
 
         <!-- Professional Plan -->
-        <div class="relative scale-105 transform rounded-2xl border-2 border-blue-500 bg-blue-50 p-8 shadow-xl">
+        <div class="border-brand relative scale-105 transform rounded-2xl border-2 bg-blue-50 p-8 shadow-xl">
           <div class="absolute -top-4 left-1/2 -translate-x-1/2 transform">
-            <span class="rounded-full bg-blue-600 px-4 py-1 text-sm font-semibold text-white">BELIEBT</span>
+            <span class="bg-brand rounded-full px-4 py-1 text-sm font-semibold text-white">BELIEBT</span>
           </div>
           <div class="mb-8 text-center">
             <h3 class="mb-4 text-2xl font-bold text-gray-900">Professional</h3>
@@ -263,31 +263,32 @@ import FeaturePreview from "../components/feature_preview.astro";
           </div>
           <ul class="mb-8 space-y-4">
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Bis zu 50 Klienten</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Alle Basis-Features</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Automatische Abrechnung</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Erweiterte Berichte</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Prioritäts-Support</span>
             </li>
           </ul>
-          <button class="w-full rounded-full bg-blue-600 py-3 font-semibold text-white transition-colors hover:bg-blue-700"> Jetzt starten </button>
+
+          <button class="bg-brand hover:bg-brand-dark w-full rounded-full py-3 font-semibold text-white transition-colors"> Jetzt starten </button>
         </div>
 
         <!-- Team Plan -->
-        <div class="rounded-2xl border-2 border-gray-200 p-8 transition-all hover:border-blue-500">
+        <div class="hover:border-brand rounded-2xl border-2 border-gray-200 p-8 transition-all">
           <div class="mb-8 text-center">
             <h3 class="mb-4 text-2xl font-bold text-gray-900">Team</h3>
             <div class="mb-2 text-5xl font-bold text-gray-900">
@@ -298,27 +299,27 @@ import FeaturePreview from "../components/feature_preview.astro";
           </div>
           <ul class="mb-8 space-y-4">
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Unbegrenzte Klienten</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Alle Pro-Features</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Multi-User Zugang</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>API-Zugang</span>
             </li>
             <li class="flex items-center">
-              <i data-lucide="check" class="mr-3 text-green-500"></i>
+              <Check class="text-brand mr-3" />
               <span>Persönlicher Support</span>
             </li>
           </ul>
-          <button class="w-full rounded-full border-2 border-blue-600 py-3 font-semibold text-blue-600 transition-colors hover:bg-blue-50">
+          <button class="border-brand text-brand w-full rounded-full border-2 py-3 font-semibold transition-colors hover:bg-blue-50">
             Kontaktieren
           </button>
         </div>
@@ -327,13 +328,11 @@ import FeaturePreview from "../components/feature_preview.astro";
   </section>
 
   <!-- CTA Section -->
-  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 py-20">
+  <section class="from-brand-light to-brand-dark bg-gradient-to-r py-20">
     <div class="container mx-auto px-6 text-center">
       <h2 class="mb-4 text-4xl font-bold text-white">Bereit, Ihre Arbeit zu vereinfachen?</h2>
       <p class="mb-8 text-xl text-blue-100">Starten Sie noch heute mit 30 Tagen kostenloser Testphase</p>
-      <button
-        class="transform rounded-full bg-white px-8 py-4 font-semibold text-blue-600 shadow-xl transition-all hover:scale-105 hover:bg-gray-100"
-      >
+      <button class="text-brand transform rounded-full bg-white px-8 py-4 font-semibold shadow-xl transition-all hover:scale-105 hover:bg-gray-100">
         Kostenlos testen - keine Kreditkarte erforderlich
       </button>
     </div>

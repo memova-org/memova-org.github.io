@@ -6,4 +6,21 @@
    --color-brand-dark: hsl(197 97% 20%);
    --color-brand-light: hsl(197 97% 40%);
 
+   --color-pastel-blue: hsl(162 16% 47%);
+   --color-pastel-green: hsl(76 24% 65%);
+   --color-pastel-orange: hsl(32 71% 71%);
+   --color-pastel-red: hsl(6 56% 51%);
+   --color-pastel-purple: hsl(271 45% 57%);
+   --color-pastel-indigo: hsl(231 48% 48%);
+   
+   --color-pastel-blue-dark: hsl(162 16% 37%);
+   --color-pastel-green-dark: hsl(76 24% 55%);
+   --color-pastel-orange-dark: hsl(32 71% 61%);
+   --color-pastel-red-dark: hsl(6 56% 41%);
+   --color-pastel-purple-dark: hsl(271 45% 47%);
+   --color-pastel-indigo-dark: hsl(231 48% 38%);
+
+
+
+
 }
