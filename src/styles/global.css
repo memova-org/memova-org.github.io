@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+
+@theme {
+   --color-brand: hsl(197 97% 30%);
+   --color-brand-dark: hsl(197 97% 20%);
+   --color-brand-light: hsl(197 97% 40%);
+
+}
