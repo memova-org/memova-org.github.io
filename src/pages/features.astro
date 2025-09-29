@@ -1,6 +1,27 @@
 ---
 import "../styles/global.css";
-import { Check, Binoculars, CableCar, Timer, Users, Tag, FileScan, Binary, Megaphone, Package2 } from "@lucide/astro";
+import {
+  Check,
+  Binoculars,
+  CableCar,
+  Timer,
+  Users,
+  Tag,
+  FileScan,
+  Binary,
+  Megaphone,
+  Package2,
+  FileText,
+  Receipt,
+  QrCode,
+  ChartColumnBig,
+  PiggyBank,
+  Server,
+  Cross,
+  DatabaseBackup,
+  ScrollText,
+  ShieldHalf,
+} from "@lucide/astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -305,7 +326,163 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <!-- Feature Client Section -->
+  <section id="feature_security" class="bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+      <div class="mb-16 text-center">
+        <h2 class="mb-4 text-4xl font-bold text-gray-900">Berichte und Statistik</h2>
+        <p class="text-xl text-gray-600">Berichte und Rechungen sowie aussagekräftige Statistiken zur erbrachen Leistung</p>
+      </div>
+
+      <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <FileText class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Berichte</h3>
+              <p class="text-gray-600"
+                >Mit der Funktion "Berichte" kann die geleistete Arbeit über die gewünschte Periode für jede Klient*in kondensiert und versandbereit
+                als PDF erstellt werden.</p
+              >
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Receipt class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Rechnung</h3>
+              <p class="text-gray-600">
+                Falls gwünscht, kann die geleistete Arbeit mit dem Firmenweiten Stundensatz verrechnet und dem Bericht als Rechung anghehängt werden.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <QrCode class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">QR-Rechung</h3>
+              <p class="text-gray-600">Memova unterstützt die Erstellung von QR-Rechung nach schweizer Standard inklusive Referenznummer. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/screenshots/reports_generate.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+        </div>
+
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/screenshots/statistics.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+        </div>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <ChartColumnBig class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Statistiken</h3>
+              <p class="text-gray-600">Visuelle Darstellung und Aufschlüsselung der verrecheten Arbeit nach Klient*innen und Zeitperiode. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Document Mangement Section -->
+  <section id="feature_documents" class="bg-white py-20">
+    <div class="container mx-auto px-6">
+      <div class="mb-16 text-center">
+        <h2 class="mb-4 text-4xl font-bold text-gray-900">Webbasierte Anwendung</h2>
+        <p class="text-xl text-gray-600">Alle Daten werden sicher auf den Servern unserer Hosting-Partner in der Schweiz gespeichert</p>
+      </div>
+
+      <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Users class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Immer verfügbar</h3>
+              <p class="text-gray-600"
+                >Memos, Dokumente und Klient*inneninformationen sind jederzeit und von überall verfügbar, auch ausserhalb des Büros.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Tag class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Mobile-Friendly</h3>
+              <p class="text-gray-600">
+                Memova ist auch für die Nutzung mit Mobilgeräten optimiert. Akteneinträge können auch unterwegs mit dem Smartphone diktiert werden.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/illustrations/cloud.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+        </div>
+
+        <div class="rounded-2xl bg-white p-8 shadow-xl">
+          <img src="/images/illustrations/low_cost.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+        </div>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <Server class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Berdüfnissorientierte Hardware</h3>
+              <p class="text-gray-600"
+                >Durch flexible Buchungsoptionen kann Rechen- und Speicherleistung des Servers direkt an die Bedürfnisse und Grösse des Unternehmens
+                angepasst werden.</p
+              >
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
+                <PiggyBank class="text-lg text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Minimale Hardwarekosten</h3>
+              <p class="text-gray-600"
+                >Um Memova zu nutzen wird lediglich ein internetfähiges Gerät (Computer, Tablet, Smartphone) sowie ein netzwerkfähiger Scanner
+                benötigt. Um alles andere kümmert sich Memova.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Security -->
   <section id="feature_security" class="bg-gray-50 py-20">
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
@@ -318,7 +495,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Users class="text-lg text-white" />
+                <Cross class="text-lg text-white" />
               </div>
             </div>
             <div>
@@ -330,7 +507,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Tag class="text-lg text-white" />
+                <Server class="text-lg text-white" />
               </div>
             </div>
             <div>
@@ -345,7 +522,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Binoculars class="text-lg text-white" />
+                <DatabaseBackup class="text-lg text-white" />
               </div>
             </div>
             <div>
@@ -369,7 +546,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <FileScan class="text-lg text-white" />
+                <ScrollText class="text-lg text-white" />
               </div>
             </div>
             <div>
@@ -381,7 +558,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500">
-                <Megaphone class="text-lg text-white" />
+                <ShieldHalf class="text-lg text-white" />
               </div>
             </div>
             <div>
