@@ -4,8 +4,6 @@ import { NotebookPen, Files, Check, Users, ChartNoAxesColumn, Lock, CloudCheck, 
 import HeroComponent from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import FeaturePreview from "../components/feature_preview.astro";
-
-const accessKey = import.meta.env.ACCESS_KEY; // your email
 ---
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
@@ -448,7 +446,7 @@ const accessKey = import.meta.env.ACCESS_KEY; // your email
 
         <div class="rounded-2xl bg-white p-8 shadow-xl md:p-12">
           <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-            <input type="hidden" name="access_key" value={accessKey} />
+            <input type="hidden" name="access_key" value="879ea922-a479-4727-8255-2e93d6044e5d" />
             <input type="hidden" name="subject" value="Kontaktanfrage über Memova Webseite" />
             <input type="hidden" name="from_name" value="Memova Advertising Page" />
             <input type="hidden" name="redirect" value="https://memova-org.github.io/success" />
