@@ -4,7 +4,11 @@ import { NotebookPen, Files, Check, Users, ChartNoAxesColumn, Lock, CloudCheck }
 import HeroComponent from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import FeaturePreview from "../components/feature_preview.astro";
+
+const accessKey = import.meta.env.ACCESS_KEY; // your email
 ---
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
 
 <Layout>
   <HeroComponent />
@@ -125,7 +129,7 @@ import FeaturePreview from "../components/feature_preview.astro";
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Ihre Vorteile</h2>
-        <p class="text-xl text-gray-600">Warum Sie Memova lieben werden</p>
+        <p class="text-xl text-gray-600">Warum sich Memova lohnt</p>
       </div>
 
       <div class="grid items-center gap-12 lg:grid-cols-2">
@@ -214,80 +218,91 @@ import FeaturePreview from "../components/feature_preview.astro";
         <p class="text-xl text-gray-600">Wählen Sie das passende Paket für Ihre Bedürfnisse</p>
       </div>
 
-      <div class="mx-auto grid max-w-5xl gap-8 md:grid-cols-3">
+      <div class="mx-auto grid max-w-3xl gap-8 md:grid-cols-2">
         <!-- Basic Plan -->
         <div class="hover:border-brand rounded-2xl border-2 border-gray-200 p-8 transition-all">
           <div class="mb-8 text-center">
             <h3 class="mb-4 text-2xl font-bold text-gray-900">Basis</h3>
             <div class="mb-2 text-5xl font-bold text-gray-900">
-              CHF 29
+              <span class="text-lg font-normal text-gray-600">ab</span>
+
+              CHF 49
               <span class="text-lg font-normal text-gray-600">/Monat</span>
             </div>
-            <p class="text-gray-600">Für einzelne Beistände</p>
+            <p class="text-gray-600">Einstieg in die digitale Fallführung</p>
           </div>
           <ul class="mb-8 space-y-4">
             <li class="flex items-center">
               <Check class="text-brand mr-3" />
-              <span>Bis zu 10 Klienten</span>
+              <span>unlimitiert Klient*innen</span>
             </li>
             <li class="flex items-center">
               <Check class="text-brand mr-3" />
-              <span>Digitale Dokumentation</span>
+              <span>Digitale Fallführung</span>
             </li>
             <li class="flex items-center">
               <Check class="text-brand mr-3" />
-              <span>Basis-Berichte</span>
+              <span>Abrechung und Berichte</span>
             </li>
             <li class="flex items-center">
               <Check class="text-brand mr-3" />
               <span>E-Mail Support</span>
             </li>
+            <li class="flex items-center">
+              <Check class="text-brand mr-3" />
+              <span>Einzellizenz</span>
+            </li>
           </ul>
-          <button class="border-brand text-brand w-full rounded-full border-2 py-3 font-semibold transition-colors hover:bg-blue-50">
+          <a
+            href="/#kontakt"
+            class="text-brand border-brand block w-full rounded-full border-2 py-3 text-center font-semibold transition-colors hover:bg-blue-50"
+          >
             Jetzt starten
-          </button>
+          </a>
         </div>
 
         <!-- Professional Plan -->
         <div class="border-brand relative scale-105 transform rounded-2xl border-2 bg-blue-50 p-8 shadow-xl">
           <div class="absolute -top-4 left-1/2 -translate-x-1/2 transform">
-            <span class="bg-brand rounded-full px-4 py-1 text-sm font-semibold text-white">BELIEBT</span>
+            <span class="bg-brand rounded-full px-4 py-1 text-sm font-semibold text-white">ALLE FUNKTIONEN</span>
           </div>
           <div class="mb-8 text-center">
-            <h3 class="mb-4 text-2xl font-bold text-gray-900">Professional</h3>
-            <div class="mb-2 text-5xl font-bold text-gray-900">
-              CHF 59
-              <span class="text-lg font-normal text-gray-600">/Monat</span>
-            </div>
-            <p class="text-gray-600">Für aktive Beistände</p>
+            <h3 class="mb-4 text-2xl font-bold text-gray-900">Vollversion</h3>
+            <div class="mb-2 text-5xl font-bold text-gray-900"> auf Anfrage </div>
+            <p class="text-gray-600">Mit Dokumentenmanagement</p>
           </div>
           <ul class="mb-8 space-y-4">
-            <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Bis zu 50 Klienten</span>
-            </li>
             <li class="flex items-center">
               <Check class="text-brand mr-3" />
               <span>Alle Basis-Features</span>
             </li>
             <li class="flex items-center">
               <Check class="text-brand mr-3" />
-              <span>Automatische Abrechnung</span>
+              <span>Dokumentenmanagement</span>
+            </li>
+
+            <li class="flex items-center">
+              <Check class="text-brand mr-3" />
+              <span>Modul Rechenschaftsberichte</span>
             </li>
             <li class="flex items-center">
               <Check class="text-brand mr-3" />
-              <span>Erweiterte Berichte</span>
+              <span>Multi-User Zugang</span>
+              <li class="flex items-center">
+                <Check class="text-brand mr-3" />
+                <span>Prioritäts-Support</span>
+              </li>
             </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Prioritäts-Support</span>
-            </li>
+
+            <a
+              href="/#kontakt"
+              class="bg-brand hover:bg-brand-dark block w-full rounded-full py-3 text-center font-semibold text-white transition-colors"
+            >
+              Jetzt starten
+            </a>
           </ul>
 
-          <button class="bg-brand hover:bg-brand-dark w-full rounded-full py-3 font-semibold text-white transition-colors"> Jetzt starten </button>
-        </div>
-
-        <!-- Team Plan -->
+          <!-- Team Plan
         <div class="hover:border-brand rounded-2xl border-2 border-gray-200 p-8 transition-all">
           <div class="mb-8 text-center">
             <h3 class="mb-4 text-2xl font-bold text-gray-900">Team</h3>
@@ -319,9 +334,14 @@ import FeaturePreview from "../components/feature_preview.astro";
               <span>Persönlicher Support</span>
             </li>
           </ul>
-          <button class="border-brand text-brand w-full rounded-full border-2 py-3 font-semibold transition-colors hover:bg-blue-50">
-            Kontaktieren
-          </button>
+          <a
+            href="/#kontakt"
+            class="text-brand border-brand block w-full rounded-full border-2 py-3 text-center font-semibold transition-colors hover:bg-blue-50"
+          >
+            Jetzt starten
+          </a>
+        </div>
+        -->
         </div>
       </div>
     </div>
@@ -331,10 +351,15 @@ import FeaturePreview from "../components/feature_preview.astro";
   <section class="from-brand-light to-brand-dark bg-gradient-to-r py-20">
     <div class="container mx-auto px-6 text-center">
       <h2 class="mb-4 text-4xl font-bold text-white">Bereit, Ihre Arbeit zu vereinfachen?</h2>
-      <p class="mb-8 text-xl text-blue-100">Starten Sie noch heute mit 30 Tagen kostenloser Testphase</p>
-      <button class="text-brand transform rounded-full bg-white px-8 py-4 font-semibold shadow-xl transition-all hover:scale-105 hover:bg-gray-100">
-        Kostenlos testen - keine Kreditkarte erforderlich
-      </button>
+      <p class="mb-8 text-xl text-blue-100"
+        >Kontaktieren Sie uns für einen kostenlosen Zugang zur Demo-Version - Freigeschaltet innerhalb von einem Arbeitstag</p
+      >
+      <a
+        href="/#kontakt"
+        class="text-brand transform rounded-full bg-white px-8 py-4 font-semibold shadow-xl transition-all hover:scale-105 hover:bg-gray-100"
+      >
+        Zugang zur Demo-Version anfragen
+      </a>
     </div>
   </section>
 
@@ -344,36 +369,64 @@ import FeaturePreview from "../components/feature_preview.astro";
       <div class="mx-auto max-w-4xl">
         <div class="mb-12 text-center">
           <h2 class="mb-4 text-4xl font-bold text-gray-900">Kontaktieren Sie uns</h2>
-          <p class="text-xl text-gray-600">Wir helfen Ihnen gerne weiter</p>
+          <p class="text-xl text-gray-600">Für einen kostenlosen Demo-Zugang</p>
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl md:p-12">
-          <form class="space-y-6">
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+            <input type="hidden" name="access_key" value={accessKey} />
+            <input type="hidden" name="subject" value="Kontaktanfrage über Memova Webseite" />
+            <input type="hidden" name="from_name" value="Memova Advertising Page" />
+            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
             <div class="grid gap-6 md:grid-cols-2">
               <div>
-                <label class="mb-2 block font-semibold text-gray-700">Vorname</label>
-                <input type="text" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
+                <label class="mb-2 block font-semibold text-gray-700">Vorname *</label>
+                <input
+                  type="text"
+                  name="first_name"
+                  class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
+                  required
+                />
               </div>
               <div>
-                <label class="mb-2 block font-semibold text-gray-700">Nachname</label>
-                <input type="text" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
+                <label class="mb-2 block font-semibold text-gray-700">Nachname *</label>
+                <input
+                  type="text"
+                  name="second_name"
+                  class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
+                  required
+                />
               </div>
             </div>
             <div>
-              <label class="mb-2 block font-semibold text-gray-700">E-Mail</label>
-              <input type="email" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
+              <label class="mb-2 block font-semibold text-gray-700">E-Mail *</label>
+              <input
+                type="email"
+                name="email"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
+                required
+              />
             </div>
             <div>
               <label class="mb-2 block font-semibold text-gray-700">Organisation</label>
-              <input type="text" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none" />
+              <input
+                type="text"
+                id="organisation"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
+              />
             </div>
             <div>
               <label class="mb-2 block font-semibold text-gray-700">Nachricht</label>
-              <textarea rows="4" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"></textarea>
+              <textarea rows="4" name="message" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
+              ></textarea>
             </div>
-            <button type="submit" class="w-full rounded-full bg-blue-600 py-4 font-semibold text-white transition-colors hover:bg-blue-700">
+            <div class="h-captcha" data-captcha="true"></div>
+            <button type="submit" class="bg-brand hover:bg-brand-dark w-full rounded-full py-4 font-semibold text-white transition-colors">
               Nachricht senden
             </button>
+            <div id="status"></div>
           </form>
         </div>
       </div>

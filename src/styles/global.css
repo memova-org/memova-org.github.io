@@ -13,12 +13,19 @@
    --color-pastel-purple: hsl(271 45% 57%);
    --color-pastel-indigo: hsl(231 48% 48%);
    
-   --color-pastel-blue-dark: hsl(162 16% 37%);
-   --color-pastel-green-dark: hsl(76 24% 55%);
-   --color-pastel-orange-dark: hsl(32 71% 61%);
-   --color-pastel-red-dark: hsl(6 56% 41%);
-   --color-pastel-purple-dark: hsl(271 45% 47%);
-   --color-pastel-indigo-dark: hsl(231 48% 38%);
+   --color-pastel-blue-dark: hsl(162 16% 27%);
+   --color-pastel-green-dark: hsl(76 24% 45%);
+   --color-pastel-orange-dark: hsl(32 71% 51%);
+   --color-pastel-red-dark: hsl(6 56% 31%);
+   --color-pastel-purple-dark: hsl(271 45% 37%);
+   --color-pastel-indigo-dark: hsl(231 48% 28%);
+
+    --color-pastel-blue-light: hsl(162 16% 67%);
+   --color-pastel-green-light: hsl(76 24% 85%);
+   --color-pastel-orange-light: hsl(32 71% 91%);
+   --color-pastel-red-light: hsl(6 56% 71%);
+   --color-pastel-purple-light: hsl(271 45% 77%);
+   --color-pastel-indigo-light: hsl(231 48% 68%);
 
 
 
