@@ -1,13 +1,13 @@
 ---
 import { Menu } from "@lucide/astro";
+import { Image } from "astro:assets";
+import MemovaLogo from "../images/logo/memova_logo.webp";
 ---
 
 <nav class="fixed top-0 z-50 w-full bg-white shadow-lg transition-all duration-300" id="navbar">
   <div class="container mx-auto px-6 py-4">
     <div class="flex items-center justify-between">
-      <a href="/" class="flex items-center space-x-3">
-        <img src="/images/logo/memova_logo.webp" alt="Memova Logo" class="h-10 w-auto" />
-      </a>
+      <a href="/" class="flex items-center space-x-3"> <Image src={MemovaLogo} alt="Memova Logo" class="h-10 w-auto" /></a>
 
       <!-- Desktop Menu -->
       <div class="hidden items-center space-x-8 md:flex">

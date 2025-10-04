@@ -4,6 +4,8 @@ import { NotebookPen, Files, Check, Users, ChartNoAxesColumn, Lock, CloudCheck, 
 import HeroComponent from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import FeaturePreview from "../components/feature_preview.astro";
+import { Image } from "astro:assets";
+import MemovaLogo from "../images/logo/memova_logo.webp";
 ---
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
@@ -23,7 +25,7 @@ import FeaturePreview from "../components/feature_preview.astro";
 
       <div class="grid items-center gap-12 lg:grid-cols-2">
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <img src="/images/logo/memova_logo.webp" alt="Happy Memova User" class="mb-6 rounded-xl" />
+          <Image src={MemovaLogo} alt="Memova Logo" class="mb-6 rounded-xl" />
         </div>
 
         <div class="space-y-6">
