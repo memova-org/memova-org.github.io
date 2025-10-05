@@ -22,6 +22,12 @@ import {
   ScrollText,
   ShieldHalf,
 } from "@lucide/astro";
+import { Picture } from "astro:assets";
+import ScanWorkflowIllustration from "../images/illustrations/scan_workflow.png";
+import CloudIllustration from "../images/illustrations/cloud.png";
+import LowCostIllustration from "../images/illustrations/low_cost.png";
+import PhishingSaveIllustration from "../images/illustrations/phishing_safe.png";
+import SwissServerIllustration from "../images/illustrations/swiss_server.png";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -258,7 +264,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <img src="/images/illustrations/scan_workflow.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+          <Picture src={ScanWorkflowIllustration} alt="Scan Workflow Illustration" class="mb-6 rounded-lg" />
         </div>
         <div class="space-y-6">
           <div class="flex gap-4">
@@ -443,11 +449,11 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <img src="/images/illustrations/cloud.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+          <Picture src={CloudIllustration} alt="Cloud Illustration" class="mb-6 rounded-lg" />
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <img src="/images/illustrations/low_cost.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+          <Picture src={LowCostIllustration} alt="Low Cost Illustration" class="mb-6 rounded-lg" />
         </div>
         <div class="space-y-6">
           <div class="flex gap-4">
@@ -538,11 +544,11 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <img src="/images/illustrations/swiss_server.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+          <Picture src={SwissServerIllustration} alt="Swiss Server Illustration" class="mb-6 rounded-lg" />
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <img src="/images/illustrations/phishing_safe.png" alt="Memos Screenshot" class="mb-6 rounded-lg" />
+          <Picture src={PhishingSaveIllustration} alt="Phishing Safe Illustration" class="mb-6 rounded-lg" />
         </div>
         <div class="space-y-6">
           <div class="flex gap-4">
