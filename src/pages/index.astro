@@ -12,6 +12,10 @@ import DocumentsIllustration from "../images/illustrations/documents_general.png
 import MemosIllustration from "../images/illustrations/memos_general.png";
 import ReportsIllustration from "../images/illustrations/memova_reports.png";
 import SecurityIllustration from "../images/illustrations/memova_lock.png";
+import JonasPhoto from "../images/photos/jonas.png";
+import { Picture } from "astro:assets";
+import PatrickPhoto from "../images/photos/patrick.png";
+import JohannesPhoto from "../images/photos/johannes.png";
 ---
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
@@ -245,7 +249,7 @@ import SecurityIllustration from "../images/illustrations/memova_lock.png";
         <div class="mx-auto mt-20 grid max-w-6xl gap-8 md:grid-cols-3">
           <!-- Jonas -->
           <div class="group rounded-2xl bg-gradient-to-br from-gray-100 to-white p-8 shadow-lg transition-all hover:shadow-lg">
-            <img src="/images/photos/jonas.png" alt="Jonas Hilti" class="mx-auto mb-6 h-40 w-40 rounded-full object-cover shadow-xl" />
+            <Picture src={JonasPhoto} alt="Jonas Hilti" class="mx-auto mb-6 h-40 w-40 rounded-full object-cover shadow-xl" />
             <div class="text-center">
               <h3 class="mb-2 text-2xl font-bold text-gray-900">Jonas Hilti</h3>
               <p class="mb-1 text-sm font-medium text-gray-500">Basel</p>
@@ -259,7 +263,7 @@ import SecurityIllustration from "../images/illustrations/memova_lock.png";
 
           <!-- Patrick -->
           <div class="group rounded-2xl bg-gradient-to-br from-gray-100 to-white p-8 shadow-lg transition-all hover:shadow-lg">
-            <img src="/images/photos/patrick.png" alt="Patrick Recher" class="mx-auto mb-6 h-40 w-40 rounded-full object-cover shadow-xl" />
+            <Picture src={PatrickPhoto} alt="Patrick Recher" class="mx-auto mb-6 h-40 w-40 rounded-full object-cover shadow-xl" />
             <div class="text-center">
               <h3 class="mb-2 text-2xl font-bold text-gray-900">Patrick Recher</h3>
               <p class="mb-1 text-sm font-medium text-gray-500">Basel / Berlin</p>
@@ -273,7 +277,7 @@ import SecurityIllustration from "../images/illustrations/memova_lock.png";
 
           <!-- Johannes -->
           <div class="group rounded-2xl bg-gradient-to-br from-gray-100 to-white p-8 shadow-lg transition-all hover:shadow-lg">
-            <img src="/images/photos/johannes.png" alt="Johannes Suter" class="mx-auto mb-6 h-40 w-40 rounded-full object-cover shadow-xl" />
+            <Picture src={JohannesPhoto} alt="Johannes Suter" class="mx-auto mb-6 h-40 w-40 rounded-full object-cover shadow-xl" />
             <div class="text-center">
               <h3 class="mb-2 text-2xl font-bold text-gray-900">Johannes Suter</h3>
               <p class="mb-1 text-sm font-medium text-gray-500">Basel / Münchenstein</p>
