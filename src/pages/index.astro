@@ -6,6 +6,12 @@ import Layout from "../layouts/Layout.astro";
 import FeaturePreview from "../components/feature_preview.astro";
 import { Image } from "astro:assets";
 import MemovaLogo from "../images/logo/memova_logo.webp";
+import CloudIllustration from "../images/illustrations/cloud.png";
+import ClientsIllustraition from "../images/illustrations/clients_general.png";
+import DocumentsIllustration from "../images/illustrations/documents_general.png";
+import MemosIllustration from "../images/illustrations/memos_general.png";
+import ReportsIllustration from "../images/illustrations/memova_reports.png";
+import SecurityIllustration from "../images/illustrations/memova_lock.png";
 ---
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
@@ -63,7 +69,7 @@ import MemovaLogo from "../images/logo/memova_logo.webp";
           title="Klient*innenverwaltung"
           description="Strukturierte Übersicht über alle Stammdaten und relevanten Beziehungen von Klient*innen"
           icon={Users}
-          image="/images/illustrations/clients_general.png"
+          image={ClientsIllustraition}
           imageAlt="Memova Illustration Klientenverwaltung"
           color="orange"
           link="/features#feature_clients"
@@ -73,7 +79,7 @@ import MemovaLogo from "../images/logo/memova_logo.webp";
           title="Digitale Fallführung"
           description="Vollständig digitale Fallführung durch Dokumentation von Tätigkeiten in Memos"
           icon={NotebookPen}
-          image="/images/illustrations/memos_general.png"
+          image={MemosIllustration}
           imageAlt="Memova Screenshopt Digitale Fallführung"
           color="blue"
           link="/features#feature_documentation"
@@ -83,7 +89,7 @@ import MemovaLogo from "../images/logo/memova_logo.webp";
           title="Dokumenten-Management-System (DMS)"
           description="Leistungsstarkes Modul zur Kient*innen basierten Organisation von Dokumenten"
           icon={Files}
-          image="/images/illustrations/documents_general.png"
+          image={DocumentsIllustration}
           imageAlt="Memova Illustration Dokumentenmanagement"
           color="red"
           link="/features#feature_documents"
@@ -93,7 +99,7 @@ import MemovaLogo from "../images/logo/memova_logo.webp";
           title="Berichte und Statistiken"
           description="Tätigkeitsberichte, Abrechungen und Statistiken in nur wenigen Klicks generieren "
           icon={ChartNoAxesColumn}
-          image="/images/illustrations/memova_reports.png"
+          image={ReportsIllustration}
           imageAlt="Memova Illustration Abrechnung"
           color="green"
           link="/features#feature_reports"
@@ -103,7 +109,7 @@ import MemovaLogo from "../images/logo/memova_logo.webp";
           title="Webbasierte Anwendung"
           description="Vollständig webbasierte Anwendung - maximale Flexibilität bei minimalem IT-Aufwand"
           icon={CloudCheck}
-          image="/images/illustrations/cloud.png"
+          image={CloudIllustration}
           imageAlt="Memova Illustration Cloud"
           color="purple"
           link="/features#feature_webbased"
@@ -113,7 +119,7 @@ import MemovaLogo from "../images/logo/memova_logo.webp";
           title="Sicherheit, Datenschutz "
           description="Verschlüssellung und Datenschutz nach aktuellen Standards"
           icon={Lock}
-          image="/images/illustrations/memova_lock.png"
+          image={SecurityIllustration}
           imageAlt="Memova Illustration Sicherheit"
           color="indigo"
           link="/features#feature_security"
