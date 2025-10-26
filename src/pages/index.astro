@@ -147,7 +147,7 @@ import JohannesPhoto from "../images/photos/johannes.png";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
-                <Check class="text-lg text-white" />
+                <Check class="text-lg text-white" aria-hidden="true" focusable="false" />
               </div>
             </div>
             <div>
@@ -162,7 +162,7 @@ import JohannesPhoto from "../images/photos/johannes.png";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
-                <Check class="text-lg text-white" />
+                <Check class="text-lg text-white" aria-hidden="true" focusable="false" />
               </div>
             </div>
             <div>
@@ -177,7 +177,7 @@ import JohannesPhoto from "../images/photos/johannes.png";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
-                <Check class="text-lg text-white" />
+                <Check class="text-lg text-white" aria-hidden="true" focusable="false" />
               </div>
             </div>
             <div>
@@ -192,7 +192,7 @@ import JohannesPhoto from "../images/photos/johannes.png";
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
-                <Check class="text-lg text-white" />
+                <Check class="text-lg text-white" aria-hidden="true" focusable="false" />
               </div>
             </div>
             <div>
@@ -206,7 +206,7 @@ import JohannesPhoto from "../images/photos/johannes.png";
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <Picture src={HappyMemova} alt="Happy Memova User" class="mb-6 rounded-xl" />
+          <Picture src={HappyMemova} alt="Image of happy Memova Users" class="mb-6 rounded-xl" />
           <div class="grid grid-cols-3 gap-4 text-center">
             <div>
               <div class="text-pastel-blue text-3xl font-bold">Mehr</div>
@@ -259,7 +259,7 @@ import JohannesPhoto from "../images/photos/johannes.png";
         </p>
         <p class="text-lg leading-relaxed text-gray-600">
           Heute wird die Memova App von Jonas (Projektmanagement und Entwicklung), Johannes (Berufsbeistand SVBB-ASCP) und Patrick (Technische Leitung
-          und Entwicklung) geleitet. Laura Salathé und Clara Vuillemin begleiten das Projekt im Advisory Board mit wertvollen fachlichen und
+          und Entwicklung) geleitet. Laura Salathe und Clara Vuillemin begleiten das Projekt im Advisory Board mit wertvollen fachlichen und
           strategischen Impulsen.
         </p>
         <p class="text-lg leading-relaxed text-gray-600">
@@ -282,7 +282,7 @@ import JohannesPhoto from "../images/photos/johannes.png";
               <p class="mb-1 text-sm font-medium text-gray-500">Basel</p>
               <p class="mb-6 text-gray-600">Projektmanagement und Entwicklung</p>
               <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
-                <Mail class="text-brand h-5 w-5" />
+                <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
                 <a href="mailto:jonas.hilti@memova.ch" class="hover:text-brand text-sm text-gray-700">jonas.hilti@memova.ch</a>
               </div>
             </div>
@@ -294,9 +294,9 @@ import JohannesPhoto from "../images/photos/johannes.png";
             <div class="text-center">
               <h3 class="mb-2 text-2xl font-bold text-gray-900">Patrick Recher</h3>
               <p class="mb-1 text-sm font-medium text-gray-500">Basel / Berlin</p>
-              <p class="mb-6 text-gray-600">Technische Leitung / Entwicklung</p>
+              <p class="mb-6 text-gray-600">Technische Leitung und Entwicklung</p>
               <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
-                <Mail class="text-brand h-5 w-5" />
+                <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
                 <a href="mailto:patrick.recher@memova.ch" class="hover:text-brand text-sm text-gray-700">patrick.recher@memova.ch</a>
               </div>
             </div>
@@ -308,9 +308,9 @@ import JohannesPhoto from "../images/photos/johannes.png";
             <div class="text-center">
               <h3 class="mb-2 text-2xl font-bold text-gray-900">Johannes Suter</h3>
               <p class="mb-1 text-sm font-medium text-gray-500">Basel</p>
-              <p class="mb-6 text-gray-600">Berufsbeistand / Geschäftsführung</p>
+              <p class="mb-6 text-gray-600">Berufsbeistand und Geschäftsführung</p>
               <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
-                <Mail class="text-brand h-5 w-5" />
+                <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
                 <a href="mailto:johannes.suter@memova.ch" class="hover:text-brand text-sm text-gray-700">johannes.suter@memova.ch</a>
               </div>
             </div>
@@ -327,7 +327,7 @@ import JohannesPhoto from "../images/photos/johannes.png";
         <p class="text-xl text-gray-600">Wählen Sie das passende Paket für Ihre Bedürfnisse</p>
       </div>
 
-      <div class="mx-auto grid max-w-3xl gap-8 md:grid-cols-2">
+      <div class="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
         <!-- Basic Plan -->
         <div class="hover:border-brand rounded-2xl border-2 border-gray-200 bg-white p-8 transition-all">
           <div class="mb-8 text-center">
@@ -342,24 +342,24 @@ import JohannesPhoto from "../images/photos/johannes.png";
           </div>
           <ul class="mb-8 space-y-4">
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
               <span>unlimitiert Klient*innen</span>
             </li>
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Digitale Fallführung</span>
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+              <span>Modul Memos (Akteneinträge) inkl. Zeiterfassung</span>
             </li>
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Abrechung und Berichte</span>
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+              <span>Modul Reporting (Erstellung von Tätigkeitsnachweisen inkl. Rechnungserstellung)</span>
             </li>
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+              <span>Statistik</span>
+            </li>
+            <li class="flex items-center">
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
               <span>E-Mail Support</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Einzellizenz</span>
             </li>
           </ul>
           <a
@@ -370,37 +370,38 @@ import JohannesPhoto from "../images/photos/johannes.png";
           </a>
         </div>
 
-        <!-- Professional Plan -->
+        <!-- Elektronische Dossierführung -->
         <div class="border-brand relative scale-105 transform rounded-2xl border-2 bg-blue-50 p-8 shadow-xl hover:bg-blue-100">
           <div class="absolute -top-4 left-1/2 -translate-x-1/2 transform">
-            <span class="bg-brand rounded-full px-4 py-1 text-sm font-semibold text-white">ALLE FUNKTIONEN</span>
+            <span class="bg-brand rounded-full px-4 py-1 text-sm font-semibold text-white">BELIEBT</span>
           </div>
           <div class="mb-8 text-center">
-            <h3 class="mb-4 text-2xl font-bold text-gray-900">Vollversion</h3>
-            <div class="mb-2 text-5xl font-bold text-gray-900"> auf Anfrage </div>
+            <h3 class="mb-4 text-2xl font-bold text-gray-900">Elektronische Dossierführung</h3>
+            <div class="mb-2 text-5xl font-bold text-gray-900">
+              <span class="text-lg font-normal text-gray-600">ab</span>
+
+              CHF 99
+              <span class="text-lg font-normal text-gray-600">/Monat</span>
+            </div>
             <p class="text-gray-600">Mit Dokumentenmanagement</p>
           </div>
           <ul class="mb-8 space-y-4">
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
               <span>Alle Basis-Features</span>
             </li>
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
               <span>Modul Dokumentenmanagement</span>
             </li>
 
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Modul Rechenschaftsberichte</span>
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+              <span>Modul Monatsabrechnung (digitale Ordnerführung)</span>
             </li>
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Multi-User Zugang</span>
-              <li class="flex items-center">
-                <Check class="text-brand mr-3" />
-                <span>Prioritäts-Support</span>
-              </li>
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+              <span>Prioritäts-Support</span>
             </li>
 
             <a
@@ -410,37 +411,25 @@ import JohannesPhoto from "../images/photos/johannes.png";
               Jetzt starten
             </a>
           </ul>
-
-          <!-- Team Plan
+        </div>
+        <!-- Vollversion  -->
         <div class="hover:border-brand rounded-2xl border-2 border-gray-200 p-8 transition-all">
           <div class="mb-8 text-center">
-            <h3 class="mb-4 text-2xl font-bold text-gray-900">Team</h3>
-            <div class="mb-2 text-5xl font-bold text-gray-900">
-              CHF 149
-              <span class="text-lg font-normal text-gray-600">/Monat</span>
-            </div>
-            <p class="text-gray-600">Für Organisationen</p>
+            <h3 class="mb-4 text-2xl font-bold text-gray-900">Vollversion</h3>
+            <div class="mb-2 text-5xl font-bold text-gray-900"> auf Anfrage </div>
           </div>
           <ul class="mb-8 space-y-4">
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Unbegrenzte Klienten</span>
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+              <span>alle Basis-Features</span>
             </li>
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Alle Pro-Features</span>
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+              <span>alle Features der elektronischen Dosierführung</span>
             </li>
             <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Multi-User Zugang</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>API-Zugang</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3" />
-              <span>Persönlicher Support</span>
+              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+              <span>Modul Arbeitsabläufe und Gesundheitskosten</span>
             </li>
           </ul>
           <a
@@ -450,8 +439,9 @@ import JohannesPhoto from "../images/photos/johannes.png";
             Jetzt starten
           </a>
         </div>
-        -->
-        </div>
+      </div>
+      <div class="mt-16 text-center">
+        <p class="text-xl text-gray-600">* Arbeiten Sie für eine Non-Profit-Organisation? Kontaktieren Sie uns für eine individuelle Lösung!</p>
       </div>
     </div>
   </section>
@@ -461,7 +451,7 @@ import JohannesPhoto from "../images/photos/johannes.png";
     <div class="container mx-auto px-6 text-center">
       <h2 class="mb-4 text-4xl font-bold text-white">Bereit, Ihre Arbeit zu vereinfachen?</h2>
       <p class="mb-8 text-xl text-blue-100"
-        >Kontaktieren Sie uns für einen kostenlosen Zugang zur Demo-Version - Freigeschaltet innerhalb von einem Arbeitstag</p
+        >Kontaktieren Sie uns für einen kostenlosen Zugang zur Demo-Version - Freigeschaltet innerhalb von weniger als einem Arbeitstag</p
       >
       <a
         href="/#kontakt"
@@ -491,18 +481,20 @@ import JohannesPhoto from "../images/photos/johannes.png";
 
             <div class="grid gap-6 md:grid-cols-2">
               <div>
-                <label class="mb-2 block font-semibold text-gray-700">Vorname *</label>
+                <label for="first_name" class="mb-2 block font-semibold text-gray-700">Vorname *</label>
                 <input
                   type="text"
+                  id="first_name"
                   name="first_name"
                   class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
                   required
                 />
               </div>
               <div>
-                <label class="mb-2 block font-semibold text-gray-700">Nachname *</label>
+                <label for="second_name" class="mb-2 block font-semibold text-gray-700">Nachname *</label>
                 <input
                   type="text"
+                  id="second_name"
                   name="second_name"
                   class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
                   required
@@ -510,32 +502,37 @@ import JohannesPhoto from "../images/photos/johannes.png";
               </div>
             </div>
             <div>
-              <label class="mb-2 block font-semibold text-gray-700">E-Mail *</label>
+              <label for="email" class="mb-2 block font-semibold text-gray-700">E-Mail *</label>
               <input
                 type="email"
+                id="email"
                 name="email"
                 class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
                 required
               />
             </div>
             <div>
-              <label class="mb-2 block font-semibold text-gray-700">Organisation</label>
+              <label for="organisation" class="mb-2 block font-semibold text-gray-700">Organisation</label>
               <input
                 type="text"
                 id="organisation"
+                name="organisation"
                 class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
               />
             </div>
             <div>
-              <label class="mb-2 block font-semibold text-gray-700">Nachricht</label>
-              <textarea rows="4" name="message" class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
-              ></textarea>
+              <label for="message" class="mb-2 block font-semibold text-gray-700">Nachricht</label>
+              <textarea
+                rows="4"
+                id="message"
+                name="message"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"></textarea>
             </div>
             <div class="h-captcha" data-captcha="true"></div>
             <button type="submit" class="bg-brand hover:bg-brand-dark w-full rounded-full py-4 font-semibold text-white transition-colors">
               Nachricht senden
             </button>
-            <div id="status"></div>
+            <div id="status" aria-live="polite" role="status"></div>
           </form>
         </div>
       </div>

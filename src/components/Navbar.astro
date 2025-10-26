@@ -19,14 +19,14 @@ import MemovaLogo from "../images/logo/memova_logo.webp";
       </div>
 
       <!-- Mobile Menu Button -->
-      <button id="mobileMenuButton" class="text-gray-700 md:hidden">
-        <Menu class="text-2xl" />
+      <button id="mobileMenuButton" class="text-gray-700 md:hidden" aria-controls="mobileMenu" aria-expanded="false" aria-label="Mobiles Menü öffnen">
+        <Menu class="text-2xl" aria-hidden="true" focusable="false" />
       </button>
     </div>
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden border-t bg-white md:hidden">
+  <div id="mobileMenu" class="hidden border-t bg-white md:hidden" aria-hidden="true">
     <div class="container mx-auto space-y-3 px-6 py-4">
       <a href="/#features" class="hover:text-brand block text-gray-700">Funktionen</a>
       <a href="/#vorteile" class="hover:text-brand block text-gray-700">Vorteile</a>

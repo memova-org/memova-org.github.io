@@ -37,7 +37,7 @@ const iconContainerColor = iconContainerVariants[color];
 
 <a class="group rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl" href={link ?? ""}>
   <div class:list={["mb-6 flex h-14 w-14 items-center justify-center rounded-lg transition-colors", iconContainerColor]}>
-    <Icon class:list={["text-2l group-hover:text-white", iconVariantClass]} />
+    <Icon class:list={["text-2l group-hover:text-white", iconVariantClass]} aria-hidden="true" focusable="false" />
   </div>
   <h3 class="mb-3 text-xl font-bold text-gray-900">{title}</h3>
   <p class="mb-4 text-gray-600">{description}</p>
