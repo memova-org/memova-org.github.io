@@ -10,6 +10,7 @@ import DocumentsIllustration from "../images/illustrations/documents_general.web
 import MemosIllustration from "../images/illustrations/memos_general.webp";
 import ReportsIllustration from "../images/illustrations/memova_reports.webp";
 import SecurityIllustration from "../images/illustrations/memova_lock.webp";
+import MemovaFull from "../images/screenshots/memova_full.png";
 import JonasPhoto from "../images/photos/jonas.jpg";
 import { Picture } from "astro:assets";
 import PatrickPhoto from "../images/photos/patrick.png";
@@ -17,6 +18,7 @@ import JohannesPhoto from "../images/photos/johannes.png";
 import LauraPhoto from "../images/photos/laura.png";
 import ClaraPhoto from "../images/photos/clara.png";
 import MemovaBird from "../images/logo/memova_bird.webp";
+import ScreenCast from "../components/ScreenCast.astro";
 ---
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
@@ -93,6 +95,12 @@ import MemovaBird from "../images/logo/memova_bird.webp";
           </div>
         </div>
       </div>
+
+      <div class="mx-auto my-8 max-w-4xl rounded-2xl p-8">
+        <div>
+          <ScreenCast src="/videos/memova_full.webm" poster={MemovaFull} class="mx-auto max-w-full rounded-2xl border border-gray-200 shadow-2xl" />
+        </div>
+      </div>
     </div>
   </section>
 
@@ -104,7 +112,7 @@ import MemovaBird from "../images/logo/memova_bird.webp";
         <p class="text-xl text-gray-600">Die tägliche Arbeit abgebildet in umfangreichen Modulen</p>
       </div>
 
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="mb-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <FeaturePreview
           title="Klient*innenverwaltung"
           description="Strukturierte Übersicht über alle Stammdaten und relevanten Beziehungen von Klient*innen"
