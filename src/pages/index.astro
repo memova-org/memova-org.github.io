@@ -22,6 +22,26 @@ import ScreenCast from "../components/ScreenCast.astro";
 ---
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
+<!-- Small inline script -->
+<script>
+  const expandable = document.getElementById("expandable");
+  const button = document.getElementById("toggleBtn");
+  let expanded = false;
+
+  if (button && expandable) {
+    button.addEventListener("click", () => {
+      expanded = !expanded;
+
+      if (expanded) {
+        expandable.style.maxHeight = expandable.scrollHeight + "px";
+        button.textContent = "Weniger anzeigen";
+      } else {
+        expandable.style.maxHeight = "0px";
+        button.textContent = "Mehr anzeigen";
+      }
+    });
+  }
+</script>
 
 <Layout>
   <HeroComponent />
@@ -279,46 +299,57 @@ import ScreenCast from "../components/ScreenCast.astro";
 
       <!-- Description -->
       <div class="mx-auto mt-16 max-w-4xl space-y-6">
+        <!-- Always visible -->
         <p class="text-lg leading-relaxed text-gray-600">
-          Memova ist nicht in einem anonymen Büro oder in einem Softwarelabor entstanden – sondern <span class="font-bold">
-            direkt aus dem Berufsalltag von Beistandspersonen.
-          </span>
+          Memova ist nicht in einem anonymen Büro oder in einem Softwarelabor entstanden – sondern
+          <span class="font-bold">direkt aus dem Berufsalltag von Beistandspersonen.</span>
           Die tägliche Erfahrung, wie viel Zeit, Energie und Sorgfalt in administrative Aufgaben, doppelte Ablagen und Medienbrüche fliesst, führte zu
           einer intensiven Auseinandersetzung mit den auf dem Markt verfügbaren Softwarelösungen.
         </p>
-        <p class="text-lg leading-relaxed text-gray-600">
-          Doch keine davon passte wirklich zu unserer Arbeit. Abgeschreckt von unpersönlichen Standardlösungen, starren Systemen sowie hohen
-          Anfangsinvestitionen und Lizenzkosten wuchs der <span class="font-bold"
-            >Wunsch nach einer einfachen, verlässlichen und praxisnahen digitalen Lösung – einer, die die tägliche Mandatsführung wirklich erleichtert
-          </span> und mehr Raum schafft für das, was uns am Herzen liegt: Menschen in schwierigen Lebenssituationen individuell und nachhaltig zu unterstützen.
-        </p>
-        <p class="text-lg leading-relaxed text-gray-600">
-          Aus diesem Bedürfnis und unzähligen Stunden administrativer Arbeit, komplexer Fallführungen und der Suche nach effizienteren Wegen wuchs die
-          Memova App.
-        </p>
-        <p class="text-lg leading-relaxed text-gray-600">
-          Was als einfache Idee zur besseren Organisation begann, entwickelte sich rasch zu einem gemeinsamen Projekt zwischen Praxis und Technik. <span
-            class="font-bold"
-          >
-            In enger Zusammenarbeit mit Fachleuten aus dem Sozialbereich und erfahrenen Schweizer Softwareentwicklern
-          </span> entstand eine Plattform, die das Beste aus beiden Welten vereint: fundiertes Wissen aus der Beistandschaftspraxis und modernste Technologie
-          – sicher, webbasiert und vollständig datenschutzkonform.
-        </p>
-        <p class="text-lg leading-relaxed text-gray-600">
-          Heute wird die Memova App von Jonas (Projektmanagement und Entwicklung), Johannes (Berufsbeistand SVBB-ASCP) und Patrick (Technische Leitung
-          und Entwicklung) geleitet. Laura Salathe und Clara Vuillemin begleiten das Projekt im Advisory Board mit wertvollen fachlichen und
-          strategischen Impulsen.
-        </p>
-        <p class="text-lg leading-relaxed text-gray-600">
-          Memova wurde von Grund auf für die Bedürfnisse von Sozialdiensten, Beistandspersonen und KESB-nahen Fachstellen entwickelt – mit einem
-          klaren Fokus auf Benutzerfreundlichkeit, Effizienz und Sicherheit. Entwickelt, gehostet und betreut in der Schweiz – persönlich, verlässlich
-          und mit höchsten Ansprüchen an Qualität und Datenschutz.
-        </p>
-        <p class="text-lg leading-relaxed font-bold text-gray-600">
-          Unsere Motivation bleibt dieselbe wie am ersten Tag: Weniger Administration. Mehr Zeit für das, was wirklich zählt – die Menschen hinter den
-          Mandaten.
-        </p>
 
+        <!-- Expandable part -->
+        <div id="expandable" class="max-h-0 overflow-hidden transition-all duration-500">
+          <div class="space-y-6">
+            <p class="text-lg leading-relaxed text-gray-600">
+              Doch keine davon passte wirklich zu unserer Arbeit. Abgeschreckt von unpersönlichen Standardlösungen, starren Systemen sowie hohen
+              Anfangsinvestitionen und Lizenzkosten wuchs der <span class="font-bold"
+                >Wunsch nach einer einfachen, verlässlichen und praxisnahen digitalen Lösung – einer, die die tägliche Mandatsführung wirklich
+                erleichtert
+              </span> und mehr Raum schafft für das, was uns am Herzen liegt: Menschen in schwierigen Lebenssituationen individuell und nachhaltig zu unterstützen.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-600">
+              Aus diesem Bedürfnis und unzähligen Stunden administrativer Arbeit, komplexer Fallführungen und der Suche nach effizienteren Wegen wuchs
+              die Memova App.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-600">
+              Was als einfache Idee zur besseren Organisation begann, entwickelte sich rasch zu einem gemeinsamen Projekt zwischen Praxis und Technik. <span
+                class="font-bold"
+              >
+                In enger Zusammenarbeit mit Fachleuten aus dem Sozialbereich und erfahrenen Schweizer Softwareentwicklern
+              </span> entstand eine Plattform, die das Beste aus beiden Welten vereint: fundiertes Wissen aus der Beistandschaftspraxis und modernste Technologie
+              – sicher, webbasiert und vollständig datenschutzkonform.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-600">
+              Heute wird die Memova App von Jonas (Projektmanagement und Entwicklung), Johannes (Berufsbeistand SVBB-ASCP) und Patrick (Technische
+              Leitung und Entwicklung) geleitet. Laura und Clara begleiten das Projekt im Advisory Board mit wertvollen fachlichen und strategischen
+              Impulsen.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-600">
+              Memova wurde von Grund auf für die Bedürfnisse von Sozialdiensten, Beistandspersonen und KESB-nahen Fachstellen entwickelt – mit einem
+              klaren Fokus auf Benutzerfreundlichkeit, Effizienz und Sicherheit. Entwickelt, gehostet und betreut in der Schweiz – persönlich,
+              verlässlich und mit höchsten Ansprüchen an Qualität und Datenschutz.
+            </p>
+
+            <p class="text-lg leading-relaxed font-bold text-gray-600">
+              Unsere Motivation bleibt dieselbe wie am ersten Tag: Weniger Administration. Mehr Zeit für das, was wirklich zählt – die Menschen hinter
+              den Mandaten.
+            </p>
+          </div>
+        </div>
+        <!-- Toggle button -->
+        <div class="flex justify-end">
+          <button id="toggleBtn" class="text-brand font-semibold transition hover:underline focus:outline-none"> Mehr anzeigen </button>
+        </div>
         <!-- Team Cards -->
         <div class="mx-auto mt-20 grid max-w-6xl gap-8 lg:grid-cols-3">
           <!-- Jonas -->
