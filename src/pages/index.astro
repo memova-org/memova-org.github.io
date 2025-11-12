@@ -4,8 +4,6 @@ import { NotebookPen, Files, Check, Users, ChartNoAxesColumn, Lock, CloudCheck, 
 import HeroComponent from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import FeaturePreview from "../components/feature_preview.astro";
-import { Image } from "astro:assets";
-import MemovaLogo from "../images/logo/memova_logo.webp";
 import CloudIllustration from "../images/illustrations/cloud.webp";
 import ClientsIllustraition from "../images/illustrations/clients_general.webp";
 import DocumentsIllustration from "../images/illustrations/documents_general.webp";
@@ -13,10 +11,12 @@ import MemosIllustration from "../images/illustrations/memos_general.webp";
 import ReportsIllustration from "../images/illustrations/memova_reports.webp";
 import SecurityIllustration from "../images/illustrations/memova_lock.webp";
 import HappyMemova from "../images/illustrations/happy_memova.png";
-import JonasPhoto from "../images/photos/jonas.png";
+import JonasPhoto from "../images/photos/jonas.jpg";
 import { Picture } from "astro:assets";
 import PatrickPhoto from "../images/photos/patrick.png";
 import JohannesPhoto from "../images/photos/johannes.png";
+import LauraPhoto from "../images/photos/laura.png";
+import ClaraPhoto from "../images/photos/clara.png";
 ---
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
@@ -35,27 +35,61 @@ import JohannesPhoto from "../images/photos/johannes.png";
       </div>
 
       <div class="grid items-center gap-12 lg:grid-cols-2">
-        <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <Image src={MemovaLogo} alt="Memova Logo" class="mb-6 rounded-xl" />
-        </div>
-
-        <div class="space-y-6">
-          <div class="space-y-4">
-            <h3 class="mb-2 text-xl font-bold text-gray-900">Modern, sicher, effizient</h3>
-
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
+              <Check class="text-lg text-white" aria-hidden="true" focusable="false" />
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-2 text-xl font-bold text-gray-900">Modern</h3>
             <p class="text-gray-600"
               >Memova ist eine neue, moderne Software, entwickelt für <span class="font-bold">Beistandspersonen</span> in der Schweiz. Memova wurde aus
-              der Praxis heraus und in enger Zusammenarbeit mit Beistandspersonen entwickelt. Durch den <span class="font-bold">modularen Aufbau</span
-              > ist der Einstieg in die digitale Fallführung ohne teure Infrastruktur und ohne Installation zusätzlicher Software möglich. Die Software
-              sorgt durch intelligente Workflows und automatisierte Prozesse für einen spürbaren Effizienzgewinn, der sich direkt in höherer Produktivität
-              widerspiegelt. So bleibt mehr Zeit für die Arbeit mit Ihren Klient*innen.
-            </p>
+              der Praxis heraus und in enger Zusammenarbeit mit Beistandspersonen entwickelt.</p
+            >
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
+              <Check class="text-lg text-white" aria-hidden="true" focusable="false" />
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-2 text-xl font-bold text-gray-900">Sicher</h3>
             <p class="text-gray-600"
-              >Als Beistandspersonen arbeiten Sie mit <span class="font-bold">höchst schützenswerten Daten</span> von vulnerablen Personen. Deshalb wurde
+              >ls Beistandspersonen arbeiten Sie mit <span class="font-bold">höchst schützenswerten Daten</span> von vulnerablen Personen. Deshalb wurde
               Memova von der ersten Codezeile an mit Fokus auf Datenschutz, Datensicherheit und Schweizer Standards entwickelt.</p
             >
-
-            <p class="font-bold text-gray-600">Entdecken Sie unten alle Funktionen im Detail - oder testen Sie Memova gleich kostenlos! </p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
+              <Check class="text-lg text-white" aria-hidden="true" focusable="false" />
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-2 text-xl font-bold text-gray-900">Effizient</h3>
+            <p class="text-gray-600"
+              >Die Software sorgt durch intelligente Workflows und automatisierte Prozesse für einen <span class="font-bold"
+                >spürbaren Effizienzgewinn</span
+              >, der sich direkt in höherer Produktivität widerspiegelt. So bleibt mehr Zeit für die Arbeit mit Ihren Klient*innen.</p
+            >
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
+              <Check class="text-lg text-white" aria-hidden="true" focusable="false" />
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-2 text-xl font-bold text-gray-900">Modular</h3>
+            <p class="text-gray-600"
+              >Durch den <span class="font-bold">modularen Aufbau</span> ist der Einstieg in die digitale Fallführung ohne teure Infrastruktur und ohne
+              Installation zusätzlicher Software möglich.</p
+            >
           </div>
         </div>
       </div>
@@ -316,6 +350,42 @@ import JohannesPhoto from "../images/photos/johannes.png";
               <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
                 <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
                 <a href="mailto:johannes.suter@memova.ch" class="hover:text-brand text-sm text-gray-700">johannes.suter@memova.ch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Advisory Board -->
+
+        <div class="mx-auto mt-20 flex max-w-6xl flex-wrap justify-center gap-8">
+          <!-- Laura -->
+          <div
+            class="group w-full rounded-2xl bg-gradient-to-br from-gray-100 to-white p-8 shadow-lg transition-all hover:shadow-lg md:w-[calc(33.333%-1.333rem)]"
+          >
+            <Picture src={LauraPhoto} alt="Laura Salathe" class="mx-auto mb-6 h-40 w-40 rounded-full object-cover shadow-xl" />
+            <div class="text-center">
+              <h3 class="mb-2 text-2xl font-bold text-gray-900">Laura Salathe</h3>
+              <p class="mb-1 text-sm font-medium text-gray-500">Basel</p>
+              <p class="mb-6 text-gray-600">Advisory Board</p>
+              <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
+                <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
+                <a href="mailto:jonas.hilti@memova.ch" class="hover:text-brand text-sm text-gray-700">laura.salathe@memova.ch</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Clara -->
+          <div
+            class="group w-full rounded-2xl bg-gradient-to-br from-gray-100 to-white p-8 shadow-lg transition-all hover:shadow-lg md:w-[calc(33.333%-1.333rem)]"
+          >
+            <Picture src={ClaraPhoto} alt="Clara Vuillemin" class="mx-auto mb-6 h-40 w-40 rounded-full object-cover shadow-xl" />
+            <div class="text-center">
+              <h3 class="mb-2 text-2xl font-bold text-gray-900">Clara Vuillemin</h3>
+              <p class="mb-1 text-sm font-medium text-gray-500">Berlin</p>
+              <p class="mb-6 text-gray-600">Advisory Board</p>
+              <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
+                <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
+                <a href="mailto:patrick.recher@memova.ch" class="hover:text-brand text-sm text-gray-700">clara.vuillemin@memova.ch</a>
               </div>
             </div>
           </div>

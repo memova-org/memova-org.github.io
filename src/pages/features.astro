@@ -32,10 +32,11 @@ import SwissServerIllustration from "../images/illustrations/swiss_server.webp";
 import ClientInfosScreenshot from "../images/screenshots/client_infos.png";
 import ClientRelationsScreenshot from "../images/screenshots/client_relations.png";
 import MemosReadScreenshot from "../images/screenshots/memos_read.png";
-import ShortcutsScreenshot from "../images/screenshots/shortcuts.png";
 import DocumentsViewScreenshot from "../images/screenshots/documents_view.png";
 import ReportsGenerateScreenshot from "../images/screenshots/reports_generate.png";
 import StatisticsScreenshot from "../images/screenshots/statistics.png";
+import ShortcutsScreenshot from "../images/screenshots/shortcuts.png";
+import AnimatedShot from "../components/ScreenCast.astro";
 
 import Layout from "../layouts/Layout.astro";
 ---
@@ -181,7 +182,7 @@ import Layout from "../layouts/Layout.astro";
 
         <!-- Shortcuts-->
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <Picture src={ShortcutsScreenshot} alt="Shortcuts Screenshot" class="mb-6 rounded-lg" />
+          <AnimatedShot src="/videos/shortcuts.webm" poster={ShortcutsScreenshot} class="rounded-xl shadow-lg" />
         </div>
         <div class="space-y-6">
           <div class="flex gap-4">
@@ -274,7 +275,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
-          <Picture src={DocumentsViewScreenshot} alt="Documents View Screenshot" class="mb-6 rounded-lg" />
+          <AnimatedShot src="/videos/documents.webm" poster={DocumentsViewScreenshot} class="rounded-xl shadow-lg" />
         </div>
 
         <div class="rounded-2xl bg-white p-8 shadow-xl">
