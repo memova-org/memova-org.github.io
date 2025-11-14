@@ -8,7 +8,7 @@ import { Mail } from "@lucide/astro";
 
 <Layout>
   <div class="container mx-auto flex flex-1 items-center justify-center px-6 py-12">
-    <div class="border-brand flex max-w-4xl flex-col space-y-8 rounded-lg border bg-white p-8 shadow-lg md:p-12">
+    <div class="flex max-w-4xl flex-col space-y-8 rounded-lg border border-gray-200 bg-white p-8 shadow-lg md:p-12">
       <h1 class="text-center text-4xl font-bold text-gray-900">Datenschutzerklärung</h1>
 
       <div class="prose prose-gray max-w-none">
@@ -17,7 +17,7 @@ import { Mail } from "@lucide/astro";
           <h2 class="mb-4 text-2xl font-bold text-gray-900">Verantwortliche Stelle</h2>
           <p class="text-gray-700">
             Memova Tech GmbH<br />
-            Bordeaux-Strasse<br />
+            Bordeaux-Strasse 5<br />
             4053 Basel<br />
           </p>
 
@@ -29,7 +29,7 @@ import { Mail } from "@lucide/astro";
                 <p class="mb-6 text-gray-600">Datenschutzverantwortlicher</p>
                 <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
                   <Mail class="text-brand h-5 w-5" />
-                  <a href="mailto:jonas.hilti@memova.ch" class="hover:text-brand text-sm text-gray-700">kontakt@memova.ch</a>
+                  <a href="mailto:kontakt@memova.ch" class="hover:text-brand text-sm text-gray-700">kontakt@memova.ch</a>
                 </div>
               </div>
             </div>
@@ -67,13 +67,63 @@ import { Mail } from "@lucide/astro";
             Nachrichteninhalt) ausschliesslich zur Bearbeitung Ihrer Anfrage verwendet.
           </p>
           <h3 class="mb-2 text-xl font-semibold text-gray-900">Rechtsgrundlage:</h3>
-          <p class="mb-4 text-gray-700"> Art. 6 Abs. 1 DSG (Rechtmässigkeit der Bearbeitung) </p>
+          <p class="mb-4 text-gray-700">Art. 6 Abs. 1 DSG (Rechtmässigkeit der Bearbeitung)</p>
           <h3 class="mb-2 text-xl font-semibold text-gray-900">Aufbewahrungsdauer:</h3>
           <p class="mb-4 text-gray-700">
             Ihre Daten werden gelöscht, sobald die Bearbeitung Ihrer Anfrage abgeschlossen ist und keine gesetzlichen Aufbewahrungspflichten bestehen.
           </p>
           <h3 class="mb-2 text-xl font-semibold text-gray-900">Weitergabe an Dritte:</h3>
-          <p class="text-gray-700"> Eine Weitergabe Ihrer Daten an Dritte erfolgt nicht. </p>
+          <p class="text-gray-700">
+            Eine Weitergabe Ihrer Daten an Dritte erfolgt nicht, ausser wenn dies für die Nutzung des Kontaktformulars technisch notwendig ist (siehe
+            Abschnitt 3.1 Web3Forms).
+          </p>
+        </section>
+
+        <!-- 3.1 Web3Forms -->
+        <section class="mb-8">
+          <h2 class="mb-4 text-2xl font-bold text-gray-900">3.1 Nutzung von Web3Forms (Kontaktformular)</h2>
+          <p class="mb-4 text-gray-700">
+            Für das Kontaktformular auf unserer Website nutzen wir den Dienst <strong>Web3Forms</strong>, betrieben von Web3Forms LLC (USA). Beim
+            Absenden eines Formulars werden die von Ihnen eingegebenen Daten an Web3Forms übermittelt und von dort an unsere interne E-Mail-Adresse
+            weitergeleitet.
+          </p>
+
+          <h3 class="mb-2 text-xl font-semibold text-gray-900">Verarbeitete Daten:</h3>
+          <ul class="mb-4 list-disc space-y-1 pl-6 text-gray-700">
+            <li>Name</li>
+            <li>E-Mail-Adresse</li>
+            <li>Nachrichteninhalt</li>
+            <li>IP-Adresse</li>
+            <li>Zeitpunkt der Übermittlung</li>
+            <li>Technische Metadaten zur Spam-Erkennung</li>
+          </ul>
+
+          <h3 class="mb-2 text-xl font-semibold text-gray-900">Zweck der Verarbeitung:</h3>
+          <p class="mb-4 text-gray-700">
+            Die Daten werden verarbeitet, um Anfragen sicher und zuverlässig entgegenzunehmen, zu übermitteln und die Funktionalität des Formulars
+            sicherzustellen.
+          </p>
+
+          <h3 class="mb-2 text-xl font-semibold text-gray-900">Rechtsgrundlage:</h3>
+          <p class="mb-4 text-gray-700">Art. 6 Abs. 1 DSG (Rechtmässigkeit der Bearbeitung)</p>
+
+          <h3 class="mb-2 text-xl font-semibold text-gray-900">Datenübermittlung ins Ausland:</h3>
+          <p class="mb-4 text-gray-700">
+            Die Verarbeitung durch Web3Forms kann eine Übermittlung von Personendaten in Staaten ausserhalb der Schweiz beinhalten (insbesondere in
+            die USA).
+          </p>
+
+          <h3 class="mb-2 text-xl font-semibold text-gray-900">Aufbewahrungsdauer:</h3>
+          <p class="mb-4 text-gray-700">
+            Web3Forms speichert Ihre Daten nur kurzfristig zur technischen Übermittlung (meist wenige Minuten bis maximal 72 Stunden).
+          </p>
+
+          <p class="text-gray-700">
+            Weitere Informationen finden Sie in der Datenschutzerklärung von Web3Forms:<br />
+            <a href="https://web3forms.com/privacy" class="text-brand hover:underline" target="_blank" rel="noopener noreferrer">
+              https://web3forms.com/privacy
+            </a>
+          </p>
         </section>
 
         <!-- 4. Ihre Rechte -->
@@ -97,23 +147,44 @@ import { Mail } from "@lucide/astro";
             Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB)<br />
             Feldeggweg 1<br />
             3003 Bern<br />
-            Website: <a href="https://www.edoeb.admin.ch" class="text-brand hover:underline" target="_blank" rel="noopener noreferrer"
-              >www.edoeb.admin.ch</a
-            >
+            Website: <a href="https://www.edoeb.admin.ch" class="text-brand hover:underline" target="_blank" rel="noopener noreferrer">
+              www.edoeb.admin.ch
+            </a>
           </p>
         </section>
 
-        <!-- 5. Hosting 
+        <!-- 5. Hosting -->
         <section class="mb-8">
           <h2 class="mb-4 text-2xl font-bold text-gray-900">5. Hosting</h2>
           <p class="text-gray-700">
-            Unsere Website wird gehostet bei:<br />
-            [Name des Hosting-Anbieters]<br />
-            [Adresse]<br />
-            [Land]
+            Unsere Website wird über <strong>GitHub Pages</strong> betrieben, ein Dienst der GitHub Inc., USA.<br /><br />
+            Beim Aufruf unserer Website werden durch GitHub automatisch technische Daten verarbeitet, darunter:
+          </p>
+
+          <ul class="mb-4 list-disc space-y-1 pl-6 text-gray-700">
+            <li>IP-Adresse</li>
+            <li>Browsertyp und -version</li>
+            <li>Datum und Uhrzeit des Zugriffs</li>
+            <li>angeforderte Datei und übertragenes Datenvolumen</li>
+          </ul>
+
+          <p class="text-gray-700">
+            Diese Daten werden verarbeitet, um Sicherheit, Stabilität und Bereitstellung der Website zu gewährleisten. Es kann dabei zu einer
+            Übermittlung von Personendaten in Staaten ausserhalb der Schweiz (insbesondere USA) kommen.
+          </p>
+
+          <p class="mt-4 text-gray-700">
+            Weitere Informationen finden Sie in der Datenschutzerklärung von GitHub:<br />
+            <a
+              href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+              class="text-brand hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Privacy Statement
+            </a>
           </p>
         </section>
--->
 
         <!-- 6. Datensicherheit -->
         <section class="mb-8">
@@ -129,7 +200,7 @@ import { Mail } from "@lucide/astro";
         <section class="mb-8">
           <h2 class="mb-4 text-2xl font-bold text-gray-900">7. Aktualität und Änderung dieser Datenschutzerklärung</h2>
           <p class="text-gray-700">
-            Diese Datenschutzerklärung ist aktuell gültig und hat den Stand 26.10.2025.<br /><br />
+            Diese Datenschutzerklärung ist aktuell gültig und hat den Stand 14.11.2025.<br /><br />
             Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an geänderte Rechtslagen oder Änderungen unserer Dienstleistungen
             anzupassen.
           </p>

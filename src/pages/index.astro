@@ -21,8 +21,6 @@ import MemovaBird from "../images/logo/memova_bird.webp";
 import ScreenCast from "../components/ScreenCast.astro";
 ---
 
-<script src="https://web3forms.com/client/script.js" async defer></script>
-<!-- Small inline script -->
 <script>
   const expandable = document.getElementById("expandable");
   const button = document.getElementById("toggleBtn");
@@ -129,7 +127,7 @@ import ScreenCast from "../components/ScreenCast.astro";
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Leistungsstarke Funktionen</h2>
-        <p class="text-xl text-gray-600">Die tägliche Arbeit abgebildet in umfangreichen Modulen</p>
+        <p class="text-xl text-gray-600">Die tägliche Arbeit abgebildet in einer modernen Software </p>
       </div>
 
       <div class="mb-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -266,22 +264,20 @@ import ScreenCast from "../components/ScreenCast.astro";
             </div>
           </div>
         </div>
-        <div class="rounded-2xl border border-gray-200 bg-gray-50 shadow-2xl md:p-8">
-          <div class="grid grid-cols-1 items-center justify-center rounded-2xl bg-white p-2 shadow-xl md:grid-cols-2 md:p-8">
-            <Picture src={MemovaBird} alt="Image of the Memova Bird" />
-            <div class="grid gap-4 text-center md:grid-cols-3">
-              <div>
-                <div class="text-pastel-blue text-3xl font-bold">Mehr</div>
-                <div class="text-sm text-gray-600">Zeit für Ihre Klient*innen</div>
-              </div>
-              <div>
-                <div class="text-pastel-green text-3xl font-bold">100%</div>
-                <div class="text-sm text-gray-600">Digital</div>
-              </div>
-              <div>
-                <div class="text-pastel-purple text-3xl font-bold">24/7</div>
-                <div class="text-sm text-gray-600">Verfügbar</div>
-              </div>
+        <div class="grid grid-cols-1 items-center justify-center rounded-2xl bg-white p-2 shadow-xl md:grid-cols-2 md:p-8">
+          <Picture src={MemovaBird} alt="Image of the Memova Bird" />
+          <div class="grid gap-4 text-center xl:grid-cols-3">
+            <div>
+              <div class="text-pastel-blue text-3xl font-bold">Mehr</div>
+              <div class="text-sm text-gray-600">Zeit für Ihre Klient*innen</div>
+            </div>
+            <div>
+              <div class="text-pastel-green text-3xl font-bold">100%</div>
+              <div class="text-sm text-gray-600">Digital</div>
+            </div>
+            <div>
+              <div class="text-pastel-purple text-3xl font-bold">24/7</div>
+              <div class="text-sm text-gray-600">Verfügbar</div>
             </div>
           </div>
         </div>
@@ -332,7 +328,7 @@ import ScreenCast from "../components/ScreenCast.astro";
             <p class="text-lg leading-relaxed text-gray-600">
               Heute wird die Memova App von Jonas (Projektmanagement und Entwicklung), Johannes (Berufsbeistand SVBB-ASCP) und Patrick (Technische
               Leitung und Entwicklung) geleitet. Laura und Clara begleiten das Projekt im Advisory Board mit wertvollen fachlichen und strategischen
-              Impulsen.
+              Beiträgen.
             </p>
             <p class="text-lg leading-relaxed text-gray-600">
               Memova wurde von Grund auf für die Bedürfnisse von Sozialdiensten, Beistandspersonen und KESB-nahen Fachstellen entwickelt – mit einem
@@ -359,9 +355,9 @@ import ScreenCast from "../components/ScreenCast.astro";
               <h3 class="mb-2 text-2xl font-bold text-gray-900">Jonas Hilti</h3>
               <p class="mb-1 text-sm font-medium text-gray-500">Basel</p>
               <p class="mb-6 text-gray-600">Projektmanagement und Entwicklung</p>
-              <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
+              <div class="inline-flex items-center gap-2 px-4 py-2">
                 <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
-                <a href="mailto:jonas.hilti@memova.ch" class="hover:text-brand text-sm text-gray-700">kontakt@memova.ch</a>
+                <a href="mailto:kontakt@memova.ch" class="hover:text-brand text-sm text-gray-700">kontakt@memova.ch</a>
               </div>
             </div>
           </div>
@@ -373,9 +369,9 @@ import ScreenCast from "../components/ScreenCast.astro";
               <h3 class="mb-2 text-2xl font-bold text-gray-900">Patrick Recher</h3>
               <p class="mb-1 text-sm font-medium text-gray-500">Basel / Berlin</p>
               <p class="mb-6 text-gray-600">Technische Leitung und Entwicklung</p>
-              <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
+              <div class="inline-flex items-center gap-2 px-4 py-2">
                 <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
-                <a href="mailto:patrick.recher@memova.ch" class="hover:text-brand text-sm text-gray-700">kontakt@memova.ch</a>
+                <a href="mailto:kontakt@memova.ch" class="hover:text-brand text-sm text-gray-700">kontakt@memova.ch</a>
               </div>
             </div>
           </div>
@@ -387,9 +383,9 @@ import ScreenCast from "../components/ScreenCast.astro";
               <h3 class="mb-2 text-2xl font-bold text-gray-900">Johannes Suter</h3>
               <p class="mb-1 text-sm font-medium text-gray-500">Basel</p>
               <p class="mb-6 text-gray-600">Berufsbeistand und Geschäftsführung</p>
-              <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
+              <div class="inline-flex items-center gap-2 px-4 py-2">
                 <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
-                <a href="mailto:johannes.suter@memova.ch" class="hover:text-brand text-sm text-gray-700">kontakt@memova.ch</a>
+                <a href="mailto:kontakt@memova.ch" class="hover:text-brand text-sm text-gray-700">kontakt@memova.ch</a>
               </div>
             </div>
           </div>
@@ -407,10 +403,6 @@ import ScreenCast from "../components/ScreenCast.astro";
               <h3 class="mb-2 text-2xl font-bold text-gray-900">Laura Salathe</h3>
               <p class="mb-1 text-sm font-medium text-gray-500">Basel</p>
               <p class="mb-6 text-gray-600">Advisory Board</p>
-              <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
-                <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
-                <a href="mailto:jonas.hilti@memova.ch" class="hover:text-brand text-sm text-gray-700">kontakt@memova.ch</a>
-              </div>
             </div>
           </div>
 
@@ -423,10 +415,6 @@ import ScreenCast from "../components/ScreenCast.astro";
               <h3 class="mb-2 text-2xl font-bold text-gray-900">Clara Vuillemin</h3>
               <p class="mb-1 text-sm font-medium text-gray-500">Berlin</p>
               <p class="mb-6 text-gray-600">Advisory Board</p>
-              <div class="inline-flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-2">
-                <Mail class="text-brand h-5 w-5" aria-hidden="true" focusable="false" />
-                <a href="mailto:patrick.recher@memova.ch" class="hover:text-brand text-sm text-gray-700">kontakt@memova.ch</a>
-              </div>
             </div>
           </div>
         </div>
