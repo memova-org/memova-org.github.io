@@ -547,94 +547,82 @@ import ScreenCast from "../components/ScreenCast.astro";
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="from-brand-light to-brand-dark bg-gradient-to-r py-20">
+  <!--Kontakt -->
+  <section id="kontakt" class="from-brand-light to-brand-dark bg-gradient-to-r py-20">
     <div class="container mx-auto px-6 text-center">
       <h2 class="mb-4 text-4xl font-bold text-white">Bereit, Ihre Arbeit zu vereinfachen?</h2>
       <p class="mb-8 text-xl text-blue-100"
-        >Kontaktieren Sie uns für einen kostenlosen Zugang zur Demo-Version - Freigeschaltet innerhalb von weniger als einem Arbeitstag</p
+        >Kontaktieren Sie uns für einen kostenlosen Zugang zur Demo-Version mit unten stehendem Kontaktformular oder direkt per Email an <a
+          class="font-semibold hover:text-white"
+          href="mailto:kontakt@memova.ch">kontakt@memova.ch</a
+        >
+        <br /> Freigeschaltet innerhalb von weniger als einem Arbeitstag!</p
       >
-      <a
-        href="/#kontakt"
-        class="text-brand transform rounded-2xl bg-white px-8 py-4 font-semibold shadow-xl transition-all hover:scale-105 hover:bg-gray-100"
-      >
-        Zugang zur Demo-Version anfragen
-      </a>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="kontakt" class="bg-gray-50 py-20">
-    <div class="container mx-auto px-6">
-      <div class="mx-auto max-w-4xl">
-        <div class="mb-12 text-center">
-          <h2 class="mb-4 text-4xl font-bold text-gray-900">Kontaktieren Sie uns</h2>
-          <p class="text-xl text-gray-600">Für einen kostenlosen Demo-Zugang</p>
-        </div>
+    <div class="mx-auto max-w-4xl">
+      <div class="rounded-2xl bg-white p-8 shadow-xl md:p-12">
+        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+          <input type="hidden" name="access_key" value="6fe3f2b3-2a85-4faf-a445-d8774adafb11" />
+          <input type="hidden" name="subject" value="Kontaktanfrage über Memova Webseite" />
+          <input type="hidden" name="from_name" value="Memova Advertising Page" />
+          <input type="hidden" name="redirect" value="https://memova-org.github.io/success" />
+          <input type="hidden" name="botcheck" class="hidden" style="display: none;" />
 
-        <div class="rounded-2xl bg-white p-8 shadow-xl md:p-12">
-          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-            <input type="hidden" name="access_key" value="6fe3f2b3-2a85-4faf-a445-d8774adafb11" />
-            <input type="hidden" name="subject" value="Kontaktanfrage über Memova Webseite" />
-            <input type="hidden" name="from_name" value="Memova Advertising Page" />
-            <input type="hidden" name="redirect" value="https://memova-org.github.io/success" />
-            <input type="hidden" name="botcheck" class="hidden" style="display: none;" />
-
-            <div class="grid gap-6 md:grid-cols-2">
-              <div>
-                <label for="first_name" class="mb-2 block font-semibold text-gray-700">Vorname *</label>
-                <input
-                  type="text"
-                  id="first_name"
-                  name="first_name"
-                  class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
-                  required
-                />
-              </div>
-              <div>
-                <label for="second_name" class="mb-2 block font-semibold text-gray-700">Nachname *</label>
-                <input
-                  type="text"
-                  id="second_name"
-                  name="second_name"
-                  class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
-                  required
-                />
-              </div>
-            </div>
+          <div class="grid gap-6 md:grid-cols-2">
             <div>
-              <label for="email" class="mb-2 block font-semibold text-gray-700">E-Mail *</label>
+              <label for="first_name" class="mb-2 block font-semibold text-gray-700">Vorname *</label>
               <input
-                type="email"
-                id="email"
-                name="email"
+                type="text"
+                id="first_name"
+                name="first_name"
                 class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
                 required
               />
             </div>
             <div>
-              <label for="organisation" class="mb-2 block font-semibold text-gray-700">Organisation</label>
+              <label for="second_name" class="mb-2 block font-semibold text-gray-700">Nachname *</label>
               <input
                 type="text"
-                id="organisation"
-                name="organisation"
+                id="second_name"
+                name="second_name"
                 class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
+                required
               />
             </div>
-            <div>
-              <label for="message" class="mb-2 block font-semibold text-gray-700">Nachricht</label>
-              <textarea
-                rows="4"
-                id="message"
-                name="message"
-                class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"></textarea>
-            </div>
-            <button type="submit" class="bg-brand hover:bg-brand-dark w-full rounded-2xl py-4 font-semibold text-white transition-colors">
-              Nachricht senden
-            </button>
-            <div id="status" aria-live="polite" role="status"></div>
-          </form>
-        </div>
+          </div>
+          <div>
+            <label for="email" class="mb-2 block font-semibold text-gray-700">E-Mail *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
+              required
+            />
+          </div>
+          <div>
+            <label for="organisation" class="mb-2 block font-semibold text-gray-700">Organisation</label>
+            <input
+              type="text"
+              id="organisation"
+              name="organisation"
+              class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="message" class="mb-2 block font-semibold text-gray-700">Nachricht</label>
+            <textarea
+              rows="4"
+              id="message"
+              name="message"
+              class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none"></textarea>
+          </div>
+          <button type="submit" class="bg-brand hover:bg-brand-dark w-full rounded-2xl py-4 font-semibold text-white transition-colors">
+            Nachricht senden
+          </button>
+          <div id="status" aria-live="polite" role="status"></div>
+        </form>
       </div>
     </div>
   </section>
