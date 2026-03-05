@@ -436,124 +436,86 @@ import ScreenCast from "../components/ScreenCast.astro";
   <section id="preise" class="scroll-mt-16 bg-gray-50 py-20">
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
-        <h2 class="mb-4 text-4xl font-bold text-gray-900">Attraktive Preise</h2>
-        <p class="text-xl text-gray-600">Wählen Sie das passende Paket für Ihre Bedürfnisse</p>
+        <h2 class="mb-4 text-4xl font-bold text-gray-900">Transparente Preisgestaltung</h2>
+        <p class="text-xl text-gray-600">Individuell angepasst – zahlen Sie nur, was Sie brauchen</p>
       </div>
 
-      <div class="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3">
-        <!-- Basic Plan -->
-        <div class="hover:border-brand rounded-2xl border-2 border-gray-200 bg-white p-8 transition-all">
-          <div class="mb-8 text-center">
-            <h3 class="mb-4 text-2xl font-bold text-gray-900">Basis</h3>
-            <div class="mb-2 text-5xl font-bold text-gray-900">
-              <span class="text-lg font-normal text-gray-600">ab</span>
+      <div class="mx-auto max-w-4xl">
+        <div class="border-brand rounded-2xl border-2 bg-white p-10 shadow-lg">
+          <div class="mb-10 text-center">
+            <div class="bg-brand/10 text-brand mb-6 inline-block rounded-2xl px-6 py-2 text-sm font-semibold"> PREIS AUF ANFRAGE </div>
+            <!-- <div class="mb-4 text-6xl font-bold text-gray-900">Individuell</div> -->
+            <p class="text-xl text-gray-600">Kein Einheitspaket – Memova passt sich Ihren Anforderungen an</p>
+          </div>
 
-              CHF 49
-              <span class="text-lg font-normal text-gray-600">/Monat</span>
+          <div class="mb-10 grid gap-6 sm:grid-cols-3">
+            <div class="rounded-xl bg-gray-50 p-6 text-center">
+              <div class="text-brand mb-2 text-3xl font-bold">Modular</div>
+              <p class="text-sm text-gray-600"
+                >Wählen Sie nur die Module, die Sie tatsächlich benötigen – keine versteckten Kosten für ungenutzte Funktionen</p
+              >
             </div>
-            <p class="text-gray-600">Einstieg in die digitale Fallführung</p>
-          </div>
-          <ul class="mb-8 space-y-4">
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>unlimitiert Klient*innen</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>Memos (Akteneinträge) inkl. Zeiterfassung</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>Reporting (Erstellung von Tätigkeitsnachweisen inkl. Rechnungserstellung)</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>Statistik</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>E-Mail Support</span>
-            </li>
-          </ul>
-          <a
-            href="/#kontakt"
-            class="text-brand border-brand block w-full rounded-2xl border-2 py-3 text-center font-semibold transition-colors hover:bg-blue-50"
-          >
-            Jetzt starten
-          </a>
-        </div>
-
-        <!-- Elektronische Dossierführung -->
-        <div class="border-brand relative scale-105 transform rounded-2xl border-2 bg-blue-50 p-8 shadow-xl hover:bg-blue-100">
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2 transform">
-            <span class="bg-brand rounded-2xl px-4 py-1 text-sm font-semibold text-white">BELIEBT</span>
-          </div>
-          <div class="mb-8 text-center">
-            <h3 class="mb-4 text-2xl font-bold text-gray-900">Elektronische Dossierführung</h3>
-            <div class="mb-2 text-5xl font-bold text-gray-900">
-              <span class="text-lg font-normal text-gray-600">ab</span>
-
-              CHF 99
-              <span class="text-lg font-normal text-gray-600">/Monat</span>
+            <div class="rounded-xl bg-gray-50 p-6 text-center">
+              <div class="text-brand mb-2 text-3xl font-bold">Flexibel</div>
+              <p class="text-sm text-gray-600">Ob Einzelperson oder Team – der Preis richtet sich nach Ihrer Unternehmensgrösse</p>
             </div>
-            <p class="text-gray-600">Mit Dokumentenmanagement</p>
+            <div class="rounded-xl bg-gray-50 p-6 text-center">
+              <div class="text-brand mb-2 text-3xl font-bold">Modern</div>
+              <p class="text-sm text-gray-600"
+                >Arbeiten Sie für eine Non-Profit-Organisation oder beschäftigen Sie viele Teilzeitmitarbeitende? Kontaktieren Sie uns für eine
+                individuelle Lösung!</p
+              >
+            </div>
           </div>
-          <ul class="mb-8 space-y-4">
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>Alle Basis-Features</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>Dokumentenmanagement</span>
-            </li>
 
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>Monatsabrechnung (digitale Ordnerführung)</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>Prioritäts-Support</span>
-            </li>
-          </ul>
-          <a
-            href="/#kontakt"
-            class="bg-brand hover:bg-brand-dark block w-full rounded-2xl py-3 text-center font-semibold text-white transition-colors"
-          >
-            Jetzt starten
-          </a>
-        </div>
-        <!-- Vollversion  -->
-        <div class="hover:border-brand rounded-2xl border-2 border-gray-200 p-8 transition-all">
-          <div class="mb-8 text-center">
-            <h3 class="mb-4 text-2xl font-bold text-gray-900">Vollversion</h3>
-            <div class="mb-2 text-5xl font-bold text-gray-900"> auf Anfrage </div>
+          <!-- <div class="mb-10">
+            <h3 class="mb-4 text-lg font-semibold text-gray-800">Verfügbare Module</h3>
+            <ul class="grid gap-3 sm:grid-cols-2">
+              <li class="flex items-center">
+                <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+                <span>Klient*innenverwaltung (unlimitiert)</span>
+              </li>
+              <li class="flex items-center">
+                <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+                <span>Memos & Zeiterfassung</span>
+              </li>
+              <li class="flex items-center">
+                <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+                <span>Reporting & Rechnungserstellung</span>
+              </li>
+              <li class="flex items-center">
+                <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+                <span>Statistik</span>
+              </li>
+              <li class="flex items-center">
+                <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+                <span>Dokumentenmanagement</span>
+              </li>
+              <li class="flex items-center">
+                <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+                <span>Monatsabrechnung & digitale Ordnerführung</span>
+              </li>
+              <li class="flex items-center">
+                <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+                <span>Arbeitsabläufe & Gesundheitskosten</span>
+              </li>
+              <li class="flex items-center">
+                <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
+                <span>Support (E-Mail oder Priorität)</span>
+              </li>
+            </ul>
+          </div> -->
+
+          <div class="text-center">
+            <a
+              href="/#kontakt"
+              class="bg-brand hover:bg-brand-dark inline-block rounded-2xl px-10 py-4 text-lg font-semibold text-white transition-colors"
+            >
+              Angebot anfragen
+            </a>
+            <p class="mt-4 text-sm text-gray-500">Wir melden uns innerhalb von 24 Stunden bei Ihnen</p>
           </div>
-          <ul class="mb-8 space-y-4">
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>alle Basis-Features</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>alle Features der elektronischen Dosierführung</span>
-            </li>
-            <li class="flex items-center">
-              <Check class="text-brand mr-3 flex-shrink-0" aria-hidden="true" focusable="false" />
-              <span>Arbeitsabläufe und Gesundheitskosten</span>
-            </li>
-          </ul>
-          <a
-            href="/#kontakt"
-            class="text-brand border-brand block w-full rounded-2xl border-2 py-3 text-center font-semibold transition-colors hover:bg-blue-50"
-          >
-            Jetzt starten
-          </a>
         </div>
-      </div>
-      <div class="mt-16 text-center">
-        <p class="text-xl text-gray-600">* Arbeiten Sie für eine Non-Profit-Organisation? Kontaktieren Sie uns für eine individuelle Lösung!</p>
       </div>
     </div>
   </section>
