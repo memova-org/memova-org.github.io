@@ -1,54 +1,27 @@
 ---
-import { type Icon as IconType } from "@lucide/astro";
 import { Picture } from "astro:assets";
 
 interface Props {
   title: string;
   description: string;
-  icon: typeof IconType;
   image: ImageMetadata;
   imageAlt?: string;
-  color: "blue" | "orange" | "red" | "green" | "purple" | "indigo";
   link?: string;
   badge?: string;
+  class?: string;
 }
 
-const { title, description, icon: Icon, image, color, link, imageAlt, badge } = Astro.props;
-
-const iconColorVariants = {
-  blue: "text-pastel-blue-dark",
-  orange: "text-pastel-orange-dark",
-  red: "text-pastel-red-dark",
-  green: "text-pastel-green-dark",
-  purple: "text-pastel-purple-dark",
-  indigo: "text-pastel-indigo-dark",
-};
-const iconContainerVariants = {
-  blue: "bg-pastel-blue group-hover:bg-pastel-blue-dark",
-  orange: "bg-pastel-orange group-hover:bg-pastel-orange-dark",
-  red: "bg-pastel-red group-hover:bg-pastel-red-dark",
-  green: "bg-pastel-green group-hover:bg-pastel-green-dark",
-  purple: "bg-pastel-purple group-hover:bg-pastel-purple-dark",
-  indigo: "bg-pastel-indigo group-hover:bg-pastel-indigo-dark",
-};
-
-const iconVariantClass = iconColorVariants[color];
-const iconContainerColor = iconContainerVariants[color];
+const { title, description, image, link, imageAlt, badge, class: className } = Astro.props;
 ---
 
 {
   link ? (
-    <a class="group relative rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl" href={link}>
+    <a class:list={["group relative rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl", className]} href={link}>
       {
         badge && (
           <div class="text-brand absolute -top-4 -right-4 z-10 flex size-24 items-center justify-center rounded-full bg-blue-100/70 px-4 py-1.5 text-center text-sm font-semibold shadow-lg transition-transform duration-300 group-hover:scale-110">{badge}</div>
         )
       }
-      <!--
-      <div class:list={["mb-6 flex h-14 w-14 items-center justify-center rounded-lg transition-colors", iconContainerColor]}>
-        <Icon class:list={["text-2l group-hover:text-white", iconVariantClass]} aria-hidden="true" focusable="false" />
-      </div>
-      -->
       <h3 class="mb-3 text-xl font-bold text-gray-900">{title}</h3>
       <p class="mb-4 text-gray-600">{description}</p>
       <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
@@ -56,17 +29,12 @@ const iconContainerColor = iconContainerVariants[color];
       </div>
     </a>
   ) : (
-    <div class="group relative rounded-xl border border-gray-100 p-8">
+    <div class:list={["group relative rounded-xl border border-gray-100 p-8", className]}>
       {
         badge && (
           <div class="text-brand absolute -top-4 -right-4 z-10 flex size-24 items-center justify-center rounded-full bg-blue-100/70 px-4 py-1.5 text-center text-sm font-semibold shadow-lg transition-transform duration-300 group-hover:scale-110">{badge}</div>
         )
       }
-      <!--
-      <div class:list={["mb-6 flex h-14 w-14 items-center justify-center rounded-lg transition-colors", iconContainerColor]}>
-        <Icon class:list={["text-2l group-hover:text-white", iconVariantClass]} aria-hidden="true" focusable="false" />
-      </div>
-      -->
       <h3 class="mb-3 text-xl font-bold text-gray-900">{title}</h3>
       <p class="mb-4 text-gray-600">{description}</p>
       <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">

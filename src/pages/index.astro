@@ -1,11 +1,11 @@
 ---
 import "../styles/global.css";
-import { NotebookPen, Files, Check, Users, ChartNoAxesColumn, Lock, CloudCheck, Mail } from "@lucide/astro";
+import { Check, Mail } from "@lucide/astro";
 import HeroComponent from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import FeaturePreview from "../components/feature_preview.astro";
 import CloudIllustration from "../images/illustrations/cloud.webp";
-import ClientsIllustraition from "../images/illustrations/clients_general.webp";
+import ClientsIllustration from "../images/illustrations/clients_general.webp";
 import DocumentsIllustration from "../images/illustrations/documents_general.webp";
 import MemosIllustration from "../images/illustrations/memos_general.webp";
 import ReportsIllustration from "../images/illustrations/memova_reports.webp";
@@ -135,76 +135,61 @@ import ScreenCast from "../components/ScreenCast.astro";
         <FeaturePreview
           title="Klient*innenverwaltung"
           description="Strukturierte Übersicht über alle Stammdaten und relevanten Beziehungen von Klient*innen"
-          icon={Users}
-          image={ClientsIllustraition}
-          imageAlt="Memova Illustration Klientenverwaltung"
-          color="orange"
+          image={ClientsIllustration}
+          imageAlt="Memova Illustration Klient*innenverwaltung"
           link="/features#feature_clients"
         />
 
         <FeaturePreview
           title="Digitale Fallführung"
           description="Vollständig digitale Fallführung durch Dokumentation von Tätigkeiten in Memos"
-          icon={NotebookPen}
           image={MemosIllustration}
-          imageAlt="Memova Screenshopt Digitale Fallführung"
-          color="blue"
+          imageAlt="Memova Illustration Digitale Fallführung"
           link="/features#feature_documentation"
         />
 
         <FeaturePreview
           title="Dokumenten-Management-System (DMS)"
-          description="Leistungsstarkes Modul zur Kient*innen basierten Organisation von Dokumenten"
-          icon={Files}
+          description="Leistungsstarkes Modul zur klient*innenbasierten Organisation von Dokumenten"
           image={DocumentsIllustration}
           imageAlt="Memova Illustration Dokumentenmanagement"
-          color="red"
           link="/features#feature_documents"
           badge="mit KI-Analyse"
         />
 
         <FeaturePreview
-          title="Arbeitsabläufe und GKM"
-          description="Erfassen und Nachverfolgen von komplexen Dokumentenpfaden wie bei Gesundheitskosten."
-          icon={Files}
+          title="Arbeitsabläufe und Gesundheitskosten"
+          description="Erfassen und Nachverfolgen komplexer Dokumentenwege, etwa bei Gesundheitskosten"
           image={WorkflowsIllustration}
-          imageAlt="Memova Illustration Intelligente Workflows"
-          color="orange"
+          imageAlt="Memova Illustration Arbeitsabläufe"
           link="/features#feature_workflows"
         />
 
         <FeaturePreview
           title="Berichte und Statistiken"
-          description="Tätigkeitsberichte, Abrechungen und Statistiken in nur wenigen Klicks generieren "
-          icon={ChartNoAxesColumn}
+          description="Tätigkeitsberichte, Abrechnungen und Statistiken mit wenigen Klicks generieren"
           image={ReportsIllustration}
           imageAlt="Memova Illustration Abrechnung"
-          color="green"
           link="/features#feature_reports"
         />
 
         <FeaturePreview
           title="Webbasierte Anwendung"
-          description="Vollständig webbasierte Anwendung - maximale Flexibilität bei minimalem IT-Aufwand"
-          icon={CloudCheck}
+          description="Vollständig webbasierte Anwendung – maximale Flexibilität bei minimalem IT-Aufwand"
           image={CloudIllustration}
           imageAlt="Memova Illustration Cloud"
-          color="purple"
           link="/features#feature_webbased"
         />
 
         <FeaturePreview
-          title="Sicherheit, Datenschutz "
-          description="Verschlüssellung und Datenschutz nach aktuellen Standards"
-          icon={Lock}
+          title="Sicherheit und Datenschutz"
+          description="Verschlüsselung und Datenschutz nach aktuellen Standards"
           image={SecurityIllustration}
           imageAlt="Memova Illustration Sicherheit"
-          color="indigo"
           link="/features#feature_security"
+          class="md:col-span-2 md:mx-auto md:w-[calc(50%-1rem)] lg:col-span-1 lg:col-start-2 lg:mx-0 lg:w-auto"
         />
-       
-        
-    </div>
+      </div>
     </div>
   </section>
 
@@ -279,7 +264,7 @@ import ScreenCast from "../components/ScreenCast.astro";
           </div>
         </div>
         <div class="grid grid-cols-1 items-center justify-center rounded-2xl bg-white p-2 shadow-xl md:grid-cols-2 md:p-8">
-          <Picture src={MemovaBird} alt="Image of the Memova Bird" />
+          <Picture src={MemovaBird} alt="Memova-Vogel" />
           <div class="grid gap-4 text-center xl:grid-cols-3">
             <div>
               <div class="text-pastel-blue text-3xl font-bold">Mehr</div>
@@ -463,7 +448,7 @@ import ScreenCast from "../components/ScreenCast.astro";
               <p class="text-sm text-gray-600">Ob Einzelperson oder Team – der Preis richtet sich nach Ihrer Unternehmensgrösse</p>
             </div>
             <div class="rounded-xl bg-gray-50 p-6 text-center">
-              <div class="text-brand mb-2 text-3xl font-bold">Modern</div>
+              <div class="text-brand mb-2 text-3xl font-bold">Fair</div>
               <p class="text-sm text-gray-600"
                 >Arbeiten Sie für eine Non-Profit-Organisation oder beschäftigen Sie viele Teilzeitmitarbeitende? Kontaktieren Sie uns für eine
                 individuelle Lösung!</p
@@ -528,7 +513,7 @@ import ScreenCast from "../components/ScreenCast.astro";
     <div class="container mx-auto px-6 text-center">
       <h2 class="mb-4 text-4xl font-bold text-white">Bereit, Ihre Arbeit zu vereinfachen?</h2>
       <p class="mb-8 text-xl text-blue-100"
-        >Kontaktieren Sie uns für einen kostenlosen Zugang zur Demo-Version mit unten stehendem Kontaktformular oder direkt per Email an <a
+        >Kontaktieren Sie uns für einen kostenlosen Zugang zur Demo-Version über das untenstehende Kontaktformular oder direkt per E-Mail an <a
           class="font-semibold hover:text-white"
           href="mailto:kontakt@memova.ch">kontakt@memova.ch</a
         >
