@@ -22,6 +22,11 @@ import {
   ScrollText,
   ShieldHalf,
   Smartphone,
+  Timeline,
+  ReceiptText,
+  HeartPulse,
+  Sparkles,
+  ListTodo,
 } from "@lucide/astro";
 import { Picture } from "astro:assets";
 import ScanWorkflowIllustration from "../images/illustrations/scan_workflow.webp";
@@ -38,6 +43,8 @@ import StatisticsScreenshot from "../images/screenshots/statistics.png";
 import ShortcutsScreenshot from "../images/screenshots/shortcuts.png";
 import AnimatedShot from "../components/ScreenCast.astro";
 import WorkflowsIllustration from "../images/illustrations/workflow.webp";
+import WorkflowScreenshot from "../images/screenshots/workflows.png";
+
 
 
 import Layout from "../layouts/Layout.astro";
@@ -84,7 +91,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <div class="rounded-2xl bg-white shadow-xl md:p-8">
-          <Picture src={ClientInfosScreenshot} alt="Klient*innen Dashboard" class="mb:mb-6 rounded-lg" />
+          <Picture src={ClientInfosScreenshot} alt="Klient*innen Dashboard" class="rounded-lg md:mb-6" />
         </div>
 
         <div class="rounded-2xl bg-white shadow-xl md:p-8">
@@ -306,9 +313,9 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
             <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">KI Gestützte Dokumentenanalyse</h3>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">KI-gestützte Dokumentenanalyse</h3>
               <p class="text-gray-600"
-                >Jedes Dokument wird automatisch digitalisiert, KI gestützt analysiert und anschliessend mit den passenden Schlagworten versehen den
+                >Jedes Dokument wird automatisch digitalisiert, KI-gestützt analysiert und anschliessend mit den passenden Schlagworten versehen den
                 jeweiligen Klient*innen zugeordnet.
               </p>
             </div>
@@ -342,6 +349,94 @@ import Layout from "../layouts/Layout.astro";
                 Dokument in Memova seinem Original zugeordnet werden. Die Originale werden nach Barcode-Nummer sortiert abgelegt. Wird ein
                 Papierdokument benötigt, helfen die Such- und Filterfunktionen in der Memova App, die zugehörige Barcode- Nummer zu finden.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Feature Workflows -->
+  <section id="feature_workflows" class="scroll-mt-16 bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+      <div class="mb-16 text-center">
+        <h2 class="mb-4 text-4xl font-bold text-gray-900">Arbeitsabläufe und Gesundheits&shy;kosten&shy;modul (GKM)</h2>
+        <p class="text-xl text-gray-600">Komplexe Dokumentenwege wie bei der Abrechnung von Gesundheitskosten einfach nachvollziehen</p>
+      </div>
+
+      <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
+                <ReceiptText class="text-lg text-white" aria-hidden="true" focusable="false" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Eingehende Rechnungen erfassen</h3>
+              <p class="text-gray-600">Rechnungen mit einem Klick erfassen und die Buchung dokumentieren.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
+                <Timeline class="text-lg text-white" aria-hidden="true" focusable="false" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Dokumentenwege nachvollziehen</h3>
+              <p class="text-gray-600">Dokumente und ihre Wege auch über längere Zeit strukturiert erfassen und nachvollziehen.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
+                <HeartPulse class="text-lg text-white" aria-hidden="true" focusable="false" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Gesundheitskosten verfolgen</h3>
+              <p class="text-gray-600">Von der Arztrechnung über die Zahlung und die Rückforderung bei der Krankenkasse bis zum Einreichen bei der Sozialbehörde werden alle Schritte nachvollziehbar und übersichtlich dokumentiert.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-white shadow-xl md:p-8">
+          <Picture src={WorkflowsIllustration} alt="Workflow Illustration" class="rounded-lg md:mb-6" />
+        </div>
+
+        <div class="rounded-2xl bg-white shadow-xl md:p-8">
+          <Picture src={WorkflowScreenshot} alt="Workflow Screenshot" class="rounded-lg md:mb-6" />
+        </div>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
+                <Sparkles class="text-lg text-white" aria-hidden="true" focusable="false" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">KI-gestützte Datenerfassung</h3>
+              <p class="text-gray-600"
+                >Dank automatischer KI-Analyse werden für Arbeitsabläufe relevante Informationen wie Rechnungsbetrag oder Fälligkeitsdatum
+                strukturiert aus den Dokumenten extrahiert.</p
+              >
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
+                <ListTodo class="text-lg text-white" aria-hidden="true" focusable="false" />
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold text-gray-900">Aufgaben und Notizen</h3>
+              <p class="text-gray-600"
+                >Arbeitsabläufe lassen sich auch ohne Dokumente nutzen – etwa für klient*innenbezogene Notizen und Aufgaben.</p
+              >
             </div>
           </div>
         </div>
@@ -509,8 +604,10 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
+
+
   <!-- Feature Security -->
-  <section id="feature_security" class="scroll-mt-16 bg-gray-50 py-20">
+  <section id="feature_security" class="scroll-mt-16 bg-white py-20">
     <div class="container mx-auto px-6">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-4xl font-bold text-gray-900">Sicherheit und Datenschutz</h2>
@@ -566,103 +663,7 @@ import Layout from "../layouts/Layout.astro";
           <Picture src={SwissServerIllustration} alt="Swiss Server Illustration" class="rounded-lg md:mb-6" />
         </div>
 
-        <div class="me:p-8 rounded-2xl bg-white shadow-xl">
-          <Picture src={PhishingSaveIllustration} alt="Phishing Safe Illustration" class="rounded-lg md:mb-6" />
-        </div>
-        <div class="space-y-6">
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
-                <ScrollText class="text-lg text-white" aria-hidden="true" focusable="false" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Audit-Log</h3>
-              <p class="text-gray-600"
-                >Administrator*innen haben Zugriff auf ein detailliertes Audit-Log, das sämtliche Änderungen an Daten und Einstellungen
-                nachvollziehbar dokumentiert. So bleibt jederzeit ersichtlich, wer wann welche Anpassungen vorgenommen hat – für maximale Transparenz
-                und Revisionssicherheit.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
-                <ShieldHalf class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Schutz vor Phishing</h3>
-              <p class="text-gray-600"
-                >Durch eingebaute Sicherheitsmechanismen wie das passwortlose Loginverfahren mittels Passkeys wird das Risiko von Phishing- und
-                Ransomware-Attacken reduziert</p
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-   <!-- Feature Workflows -->
-  <section id="feature_workflows" class="scroll-mt-16 bg-gray-50 py-20">
-    <div class="container mx-auto px-6">
-      <div class="mb-16 text-center">
-        <h2 class="mb-4 text-4xl font-bold text-gray-900">Arbeitsabläufe</h2>
-        <p class="text-xl text-gray-600">Komplexe Dokumentenwege einfach Nachvollziehen</p>
-      </div>
-
-      <div class="grid items-center gap-12 gap-y-24 lg:grid-cols-2">
-        <div class="space-y-6">
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
-                <Cross class="text-lg text-white" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Schweizer Produkt</h3>
-              <p class="text-gray-600">Memova wurde vollständig in der Schweiz entwickelt.</p>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
-                <Server class="text-lg text-white" aria-hidden="true" focusable="false" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Datenspeicherung auf Schweizer Servern</h3>
-              <p class="text-gray-600">
-                Alle Daten werden ausschliesslich von Schweizer Anbieterinnen auf Servern in der Schweiz gespeichert und verarbeitet und unterliegen
-                somit dem strengen Schweizer Datenschutzgesetz.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="flex-shrink-0">
-              <div class="bg-brand flex h-12 w-12 items-center justify-center rounded-full">
-                <DatabaseBackup class="text-lg text-white" aria-hidden="true" focusable="false" />
-              </div>
-            </div>
-            <div>
-              <h3 class="mb-2 text-xl font-bold text-gray-900">Schutz vor Datenverlust</h3>
-              <p class="text-gray-600">
-                Ihre Daten werden stündlich verschlüsselt auf einem unabhängigen Server gespiegelt. So ist im Ernstfall eine schnelle und vollständige
-                Wiederherstellung gewährleistet.
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div class="rounded-2xl bg-white shadow-xl md:p-8">
-          <Picture src={WorkflowsIllustration} alt="Swiss Server Illustration" class="rounded-lg md:mb-6" />
-        </div>
-
-        <div class="me:p-8 rounded-2xl bg-white shadow-xl">
           <Picture src={PhishingSaveIllustration} alt="Phishing Safe Illustration" class="rounded-lg md:mb-6" />
         </div>
         <div class="space-y-6">
