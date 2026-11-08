@@ -2,6 +2,15 @@
 
 
 @theme {
+   /* same typography and radius scale as the Memova app (platform, app/src/app.css) */
+   --font-sans:
+      "Inter Variable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+   --radius-sm: 0.125rem;
+   --radius-md: 0.25rem;
+   --radius-lg: 0.375rem;
+   --radius-xl: 0.625rem;
+
    --color-brand: hsl(197 97% 30%);
    --color-brand-dark: hsl(197 97% 20%);
    --color-brand-light: hsl(197 97% 40%);
@@ -30,4 +39,12 @@
 
 
 
+}
+
+@layer base {
+   h1,
+   h2,
+   h3 {
+      letter-spacing: var(--tracking-tight);
+   }
 }

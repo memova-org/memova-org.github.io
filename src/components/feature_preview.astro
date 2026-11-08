@@ -16,28 +16,28 @@ const { title, description, image, link, imageAlt, badge, class: className } = A
 
 {
   link ? (
-    <a class:list={["group relative rounded-xl border border-gray-100 p-8 transition-all duration-300 hover:shadow-xl", className]} href={link}>
+    <a class:list={["group relative rounded-lg border border-gray-200 p-8 transition-all duration-300 hover:shadow-md", className]} href={link}>
       {
         badge && (
           <div class="text-brand absolute -top-4 -right-4 z-10 flex size-24 items-center justify-center rounded-full bg-blue-100/70 px-4 py-1.5 text-center text-sm font-semibold shadow-lg transition-transform duration-300 group-hover:scale-110">{badge}</div>
         )
       }
-      <h3 class="mb-3 text-xl font-bold text-gray-900">{title}</h3>
+      <h3 class:list={["mb-3 text-xl font-semibold text-gray-900", badge && "pr-12"]}>{title}</h3>
       <p class="mb-4 text-gray-600">{description}</p>
-      <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
+      <div class="flex aspect-video items-center justify-center rounded-md bg-gradient-to-br from-gray-50 to-gray-100">
         <Picture src={image} formats={["avif", "webp"]} alt={imageAlt ?? "Memova Illustration Funktion"} />
       </div>
     </a>
   ) : (
-    <div class:list={["group relative rounded-xl border border-gray-100 p-8", className]}>
+    <div class:list={["group relative rounded-lg border border-gray-200 p-8", className]}>
       {
         badge && (
           <div class="text-brand absolute -top-4 -right-4 z-10 flex size-24 items-center justify-center rounded-full bg-blue-100/70 px-4 py-1.5 text-center text-sm font-semibold shadow-lg transition-transform duration-300 group-hover:scale-110">{badge}</div>
         )
       }
-      <h3 class="mb-3 text-xl font-bold text-gray-900">{title}</h3>
+      <h3 class:list={["mb-3 text-xl font-semibold text-gray-900", badge && "pr-12"]}>{title}</h3>
       <p class="mb-4 text-gray-600">{description}</p>
-      <div class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-gray-50 to-gray-100">
+      <div class="flex aspect-video items-center justify-center rounded-md bg-gradient-to-br from-gray-50 to-gray-100">
         <Picture src={image} formats={["avif", "webp"]} alt={imageAlt ?? "Memova Illustration Funktion"} />
       </div>
     </div>
